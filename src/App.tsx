@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+      <div id="q_h_XXX">
+        <p></p>
+        <ul className="flexbox fw">
+          <li className="even">
+            <a className="btn" href="#q_h_G62"></a>
+          </li>
+          <li className="odd">
+            <a className="btn" href="#q_h_G63"></a>
+          </li>
+          <li className="even">
+            <a className="btn" href="#q_h_G64"></a>
+          </li>
+          <li className="odd">
+            <a className="btn" href="#q_h_G65"></a>
+          </li>
+          <li className="even">
+            <a className="btn" href="#q_h_G66"></a>
+          </li>
+          <li className="odd">
+            <a className="btn" href="#q_h_G67"></a>
+          </li>
+        </ul>
+        <p id="back" className="btn">
+          前へ
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p id="back" className="btn">
+          トップへ戻る
+        </p>
+      </div>
     </div>
   );
 }

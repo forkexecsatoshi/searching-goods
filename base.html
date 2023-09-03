@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="sample.js"></script>
+
+</head>
+
+<div class="choose_box">
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_XXX" style="display: none;">
+    <p></p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_G62"></a></li>
+        <li class="odd"><a class="btn" href="#q_h_G63"></a></li>
+        <li class="even"><a class="btn" href="#q_h_G64"></a></li>
+        <li class="odd"><a class="btn" href="#q_h_G65"></a></li>
+        <li class="even"><a class="btn" href="#q_h_G66"></a></li>
+        <li class="odd"><a class="btn" href="#q_h_G67"></a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 最初の選択肢 -->
+<div id="q1" class="fit">
+    <p>質問1</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_B1">ビットを選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B2">マシンを選ぶ</a></li>
+        <li class="even"><a class="btn" href="#q_B3">集塵機を選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B4">ライトを選ぶ</a></li>
+        <li class="even"><a class="btn" href="#q_B5">ダイヤモンドファイルを選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B6">その他</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+    
+    <!-- <span><a class="btn" href="#q_01">もどる</a></span> -->
+</div>
+ 
+<!-- 次の選択肢 テンプレ -->
+<div id="q_B1" style="display: none;">
+    <p>ビットを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_C2">ハンド施術</a></li>
+        <li class="odd"><a class="btn" href="#q_h_C3">フット施術</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+<div id="q_B2" style="display: none;">
+    <p>マシンを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C3">サロンプロ仕様</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C4">サロン1～2年目</a></li>
+        <li class="even"><a class="btn" href="#q_m_C5">セルフメイン</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C6">フット用高トルク</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B3" style="display: none;">
+    <p>集塵機を選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C9">充電式</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C10">コード式</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B4" style="display: none;">
+    <p>ライトを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C14">本硬化～仮硬化</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C15">仮硬化</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B5" style="display: none;">
+    <p>ダイヤモンドファイルを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_C6">ハンド用ファイル</a></li>
+        <li class="odd"><a class="btn" href="#q_d_C7">フット用ファイル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_h_C2" style="display: none;">
+    <p>ハンド施術</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_D3">オフ＆フィルイン</a></li>
+        <li class="odd"><a class="btn" href="#q_h_D4">ケア＆プレパレーション</a></li>
+        <li class="even"><a class="btn" href="#q_h_D5">ストーンオフ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_h_C3" style="display: none;">
+    <p>フット施術</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_D4">フットケア</a></li>
+        <li class="odd"><a class="btn" href="#q_f_D10">トラブルフット</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_D3" style="display: none;">
+    <p>オフ＆フィルイン</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_E4">オフ</a></li>
+        <li class="odd"><a class="btn" href="#q_h_E5">フィルイン</a></li>
+        <li class="even"><a class="btn" href="#q_h_E6">2in1次世代ビット</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_D4" style="display: none;">
+    <p>ケア＆プレパレーション</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_E10">キューティクルケア</a></li>
+        <li class="odd"><a class="btn" href="#q_h_E11">ハードスキンケア</a></li>
+        <li class="even"><a class="btn" href="#q_h_E12">サンディング</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_D5" style="display: none;">
+    <p>ストーンオフ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_E16">ストーンリムーバー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_E17">ストーンオフ</a></li>
+        <li class="even"><a class="btn" href="#a_h_E18">ベビーコーン</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E5" style="display: none;">
+    <p>ストーンオフ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_E16">ストーンリムーバー</a></li>
+        <li class="odd"><a class="btn" href="#q_h_E17">ストーンオフ</a></li>
+        <li class="even"><a class="btn" href="#q_h_E18">ベビーコーン</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E4" style="display: none;">
+    <p>オフ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_F5">ハードジェル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_F6">ソフトジェル</a></li>
+        <li class="even"><a class="btn" href="#q_h_F7">アクリル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E5" style="display: none;">
+    <p>フィルイン</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_F10">トップカラー層削り</a></li>
+        <li class="odd"><a class="btn" href="#q_h_F12">リフト直し・仕上げ、段差取り</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E6" style="display: none;">
+    <p>オフ+フィルイン2in1</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_F10">先端丸型で安心安全</a></li>
+        <li class="odd"><a class="btn" href="#q_h_F12">先端平らで際まで攻める</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E10" style="display: none;">
+    <p>甘皮キューティクル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_F22">キューティクルのプッシュアップ</a></li>
+        <li class="odd"><a class="btn" href="#q_h_F23">ポケット・コーナー施術</a></li>
+        <li class="even"><a class="btn" href="#q_h_F24">ルースキューティクルの除去</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E11" style="display: none;">
+    <p>ハードスキンケア</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_F27">広い範囲</a></li>
+        <li class="odd"><a class="btn" href="#q_h_F28">狭い範囲</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_E12" style="display: none;">
+    <p>サンディング</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_F32">サンディングバンド</a></li>
+        <li class="odd"><a class="btn" href="#a_h_F33">ブロンズダイヤモンドスリムバレル</a></li>
+        <li class="even"><a class="btn" href="#a_h_F35">ダイヤモンドテーパー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_F36">ブロンズスリムバレル</a></li>
+        <li class="odd"><a class="btn" href="#a_h_F37">ラージバレル</a></li>
+        <li class="even"><a class="btn" href="#a_h_F38">スモールバレル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F5" style="display: none;">
+    <p>ハードジェル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_G6">サロンで時短・上級者プロ向け</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G7">ゆっくり丁寧に・中級者向け</a></li>
+        <li class="even"><a class="btn" href="#q_h_G8">サロンワーク始めて1年目</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G9">セルフネイラー様駆け出し</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F6" style="display: none;">
+    <p>ソフトジェル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_G13">サロンで時短・上級者プロ向け</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G14">ゆっくり丁寧に・中級者向け</a></li>
+        <li class="even"><a class="btn" href="#q_h_G15">サロンワーク始めて1年目</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G16">セルフネイラー様駆け出し</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F7" style="display: none;">
+    <p>アクリル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_G21">サロンで時短・上級者プロ向け</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G22">ゆっくり丁寧に・中級者向け</a></li>
+        <li class="even"><a class="btn" href="#q_h_G23">サロンワーク始めて1年目</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- フィルインは一旦抜かす -->
+<div id="q_h_F10" style="display: none;">
+    <p>トップカラー層削り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_G27">アクリル・ハードジェル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_G28">ソフトジェル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+
+
+
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F12" style="display: none;">
+    <p>リスト直し・仕上げ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G34">オーロラビット　コーンF</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G35">テーパーラウンドF</a></li>
+        <li class="even"><a class="btn" href="#a_h_G36">スモールコーン</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G37">セラマルチフィル</a></li>
+        <li class="even"><a class="btn" href="#a_h_G38">シルバービットスモールスムーストップF</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F16" style="display: none;">
+    <p>先端丸型で安心安全</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G47">トリプルフィル</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G48">コンビネーションコーン</a></li>
+        <li class="even"><a class="btn" href="#a_h_G49">フィルインデュオ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F16" style="display: none;">
+    <p>先端丸型で安心安全</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G53">FUJIビット</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G54">コンビネーションテーパー</a></li>
+        <li class="even"><a class="btn" href="#a_h_G55">クロステーパー</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F22" style="display: none;">
+    <p>キューティクルのプッシュアップ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G62">スモールテーパー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G63">ミニポイント</a></li>
+        <li class="even"><a class="btn" href="#a_h_G64">グリーンポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G65">ベビーテーパー</a></li>
+        <li class="even"><a class="btn" href="#a_h_G66">ベビーポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G67">スリムゴールドダイヤ</a></li>
+        <li class="even"><a class="btn" href="#a_h_G68">キューティクルケア</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G69">オーロラダイヤモンドショートコーン</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F23" style="display: none;">
+    <p>ポケット・コーナー施術</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G75">ゴールドダイヤ　ニードル</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G76">リムーバルスティック</a></li>
+        <li class="even"><a class="btn" href="#a_h_G77">オニクリーン</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G78">ライスポイント</a></li>
+        <li class="even"><a class="btn" href="#a_h_G79">アンダークリーナー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F24" style="display: none;">
+    <p>ルースキューティクルの除去</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G83">ボーラー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G84">キューティクルニッパー</a></li>
+        <li class="even"><a class="btn" href="#a_h_G85">ライスポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G86">アンダークリーナー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F27" style="display: none;">
+    <p>広い範囲</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G91">スキンスムーサー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G92">オーロラスキンケア</a></li>
+        <li class="even"><a class="btn" href="#a_h_G93">スリムゴールドダイヤ</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G94">スキンクリーナー</a></li>
+        <li class="even"><a class="btn" href="#a_h_G95">ダイヤモンドテーパー</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G96">ピンクポイント</a></li>
+        <li class="even"><a class="btn" href="#a_h_G97">グリーンポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G98">ゴールドダイヤ　ニードル</a></li>
+        <li class="even"><a class="btn" href="#a_h_G99">サイドコーナー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_h_F28" style="display: none;">
+    <p>狭い範囲</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_G91">ソフティ</a></li>
+        <li class="odd"><a class="btn" href="#a_h_G92">ボーラー　C</a></li>
+        <li class="even"><a class="btn" href="#a_h_G93">ミニポイント</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G6" style="display: none;">
+    <p>サロンで時短・上級者プロ向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_H7">面取り有り</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H8">面取り無し</a></li>
+        <li class="even"><a class="btn" href="#q_h_H10">オーバル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H11">テーパー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G7" style="display: none;">
+    <p>ゆっくり丁寧に・中級者向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_H15">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H17">スモールバレル</a></li>
+        <li class="even"><a class="btn" href="#q_h_H18">テーパー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G8" style="display: none;">
+    <p>サロンワーク始めて1年目</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_H23">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H25">スモールバレル</a></li>
+        <li class="even"><a class="btn" href="#q_h_H27">スムーストップ</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H28">スモールスムーストップ</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G9" style="display: none;">
+    <p>セルフネイラー様駆け出し</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H60">オーロラビットラージC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H61">オーロラビットラージM</a></li>
+        <li class="even"><a class="btn" href="#a_h_H62">オーロラビットスモールC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H63">オーロラビットスモールM</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G13" style="display: none;">
+    <p>サロンで時短・上級者プロ向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_H39">面取り有り</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H40">面取り無し</a></li>
+        <li class="even"><a class="btn" href="#q_h_H42">オーバル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H43">テーパー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G14" style="display: none;">
+    <p>ゆっくり丁寧に・中級者向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_H46">面取り有り</a></li>
+        <li class="odd"><a class="btn" href="#q_h_H48">オーバル</a></li>
+        <li class="even"><a class="btn" href="#q_h_H49">テーパー</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G15" style="display: none;">
+    <p>サロンワーク始めて1年目</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H53">オーロラビットラージC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H54">オーロラビットラージM</a></li>
+        <li class="even"><a class="btn" href="#a_h_H55">オーロラビットスモールC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H56">オーロラビットスモールM</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G16" style="display: none;">
+    <p>セルフネイラー様駆け出し</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H60">オーロラビットラージC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H61">オーロラビットラージM</a></li>
+        <li class="even"><a class="btn" href="#a_h_H62">オーロラビットスモールC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H63">オーロラビットスモールM</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G21" style="display: none;">
+    <p>サロンで時短・上級者プロ向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H68">ブラックビットラージXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H69">ブラックビットラージXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_H70">ブラックビットスモールXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H71">ブラックビットスモールXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G22" style="display: none;">
+    <p>ゆっくり丁寧に・中級者向け</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H75">ブラックビットラージXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H76">ブラックビットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_H77">ブラックビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H78">ブラックビットスモールC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G23" style="display: none;">
+    <p>サロンワーク始めて1年目・初心者でも安心</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H81">ブラックビットラージXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H82">ブラックビットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_H83">ブラックビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H84">ブラックビットスモールC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G27" style="display: none;">
+    <p>アクリル・ハードジェル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H90">ブラックビットラージC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H91">ブラックビットラージM</a></li>
+        <li class="even"><a class="btn" href="#a_h_H92">ブラックビットスモールC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H94">オーロラビットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_H95">オーロラビットラージM</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H96">オーロラビットスモールC</a></li>
+        <li class="even"><a class="btn" href="#a_h_H97">オーロラビットスモールM</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_G28" style="display: none;">
+    <p>ソフトジェル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_H102">オーロラビットラージC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H103">オーロラビットラージM</a></li>
+        <li class="even"><a class="btn" href="#a_h_H104">オーロラビットスモールC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_H105">オーロラビットスモールM</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+
+
+<div id="q_h_H7" style="display: none;">
+    <p>面取り有り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_I8">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_I10">スモールバレル</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H8" style="display: none;">
+    <p>面取り無し</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_I13">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_I15">スモールバレル</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H10" style="display: none;">
+    <p>オーバル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_I20">スモールバレル</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I21">オーロラビットスモールオーバルXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H11" style="display: none;">
+    <p>テーパー</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I25">テーパーラウンド M</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I26">テーパートップXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H15" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I31">ブラックビットXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I32">ブラックビットC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I33">オーロラビットXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I34">オーロラビットC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H17" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I37">ブラックビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I38">ブラックビットスモールC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I39">オーロラビットスモールバレルXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I40">オーロラビットスモールバレルC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H18" style="display: none;">
+    <p>テーパー</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I43">テーパーラウンドC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I44">テーパートップXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I43">テーパートップC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H23" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I49">ブラックビットXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I50">ブラックビットC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I51">オーロラビットXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I52">オーロラビットC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H25" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I55">ブラックビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I56">ブラックビットスモールC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I57">オーロラビットスモールバレルXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I58">オーロラビットスモールバレルC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H27" style="display: none;">
+    <p>スムーストップ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I61">オーロラビットスムーストップXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I62">オーロラビットスムーストップC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H28" style="display: none;">
+    <p>スモールスムーストップ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I61">オーロラスモールスムーストップXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I62">オーロラスモールスムーストップC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H39" style="display: none;">
+    <p>面取り有り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="q_h_I73">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_I75">スモールバレル</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H40" style="display: none;">
+    <p>面取り無し</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_I80">ラージバレル</a></li>
+        <li class="odd"><a class="btn" href="#q_h_I82">スモールバレル</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H42" style="display: none;">
+    <p>オーバル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_I87">スモールバレル</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I87" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I88">オーロラビットスモールオーバルXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I89">オーロラビットスモールオーバルC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H43" style="display: none;">
+    <p>テーパー</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I61">テーパーラウンドM</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I62">テーパートップC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H46" style="display: none;">
+    <p>面取り有り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I98">オーロラビットラージXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I99">オーロラビットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I100">ゴールドビットラージXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I101">ゴールドビットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I102">シルバービットラージXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I103">シルバービットラージC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I105">オーロラビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I106">オーロラビットスモールC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I107">ゴールドビットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I108">ゴールドビットスモールC</a></li>
+        <li class="even"><a class="btn" href="#a_h_I109">シルバービットスモールXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I10">シルバービットスモールC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H48" style="display: none;">
+    <p>オーバル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_IXX">オーバルがない？</a></li>
+
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_H49" style="display: none;">
+    <p>テーパー</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_I114">テーパーラウンドM</a></li>
+        <li class="odd"><a class="btn" href="#a_h_I115">テーパートップC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I8" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J9">ブラックビットラージXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J10">ブラックビットラージXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J11">オーロラビットラージバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J12">オーロラビットラージバレルXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I10" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J17">ブラックビットスモールXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J18">ブラックビットスモールXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J19">オーロラビットスモールバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J20">オーロラビットスモールバレルXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I13" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J25">オーロラビットラージバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J26">オーロラビットラージバレルXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I15" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J31">オーロラビットスモールバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J32">オーロラビットスモールバレルXXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I73" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J39">オーロラビットラージXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J40">オーロラビットラージXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J41">ゴールドビットラージXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J42">ゴールドビットラージXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J43">シルバービットラージXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J44">シルバービットラージXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I75" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J49">オーロラビットスモールXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J50">オーロラビットスモールXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J51">ゴールドビットスモールXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J52">ゴールドビットスモールXC</a></li>
+        <li class="even"><a class="btn" href="#a_h_J53">シルバービットスモールXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J54">シルバービットスモールXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+<div id="q_h_I80" style="display: none;">
+    <p>ラージバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J59">オーロラビットラージバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J60">オーロラビットラージバレルXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_h_I82" style="display: none;">
+    <p>スモールバレル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_h_J64">オーロラビットスモールバレルXXC</a></li>
+        <li class="odd"><a class="btn" href="#a_h_J65">オーロラビットスモールバレルXXC</a></li>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- ここまでハンド、ここからフット -->
+
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_f_D4" style="display: none;">
+    <p>フットケア</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_D5">角質除去・スキンケア</a></li>
+        <li class="odd"><a class="btn" href="#q_f_D6">ペディケア</a></li>
+        <li class="even"><a class="btn" href="#q_f_D7">タコ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D10" style="display: none;">
+    <p>トラブルフット</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_D11">ウオノメ</a></li>
+        <li class="odd"><a class="btn" href="#q_f_D12">巻き爪</a></li>
+        <li class="even"><a class="btn" href="#q_f_D13">肥厚爪</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D5" style="display: none;">
+    <p>角質除去・スキンケア</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_E6">広範囲</a></li>
+        <li class="odd"><a class="btn" href="#q_f_E7">狭い範囲</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D6" style="display: none;">
+    <p>ペディケア</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_E10">キューティクル</a></li>
+        <li class="odd"><a class="btn" href="#q_f_E11">プッシュアップ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D7" style="display: none;">
+    <p>タコ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_E15">粗削り</a></li>
+        <li class="odd"><a class="btn" href="#q_f_E16">仕上げ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D11" style="display: none;">
+    <p>ウオノメ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_f_E21">粗削り</a></li>
+        <li class="odd"><a class="btn" href="#q_f_E22">仕上げ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D26" style="display: none;">
+    <p>巻き爪</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_E27">スリムポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_f_E28">プレパレーター</a></li>
+        <li class="even"><a class="btn" href="#a_f_E29">ニードル</a></li>
+        <li class="odd"><a class="btn" href="#a_f_E30">トップグリップ</a></li>
+        <li class="even"><a class="btn" href="#a_f_E31">ソフティ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_D38" style="display: none;">
+    <p>肥厚爪</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_E39">セラマルチフィル</a></li>
+        <li class="odd"><a class="btn" href="#a_f_E40">マルチスピンドル</a></li>
+        <li class="even"><a class="btn" href="#a_f_E41">スモールテーパー</a></li>
+        <li class="odd"><a class="btn" href="#a_f_E42">スリムオーバル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E6" style="display: none;">
+    <p>広範囲</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F7">粗削り</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F8">仕上げ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E7" style="display: none;">
+    <p>狭い範囲</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F11">粗削り</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F12">仕上げ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E10" style="display: none;">
+    <p>キューティクル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F16">オニクリーン</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F17">リムーバルスティック</a></li>
+        <li class="even"><a class="btn" href="#a_f_F18">ベビースキンクリーナー</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F19">再度クリーン</a></li>
+        <li class="even"><a class="btn" href="#a_f_F20">ミニポイント</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E11" style="display: none;">
+    <p>プッシュアップ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F25">ミニポイント</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E15" style="display: none;">
+    <p>粗削り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F33">ダイヤモンドメガ</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F34">円盤ビット</a></li>
+        <li class="even"><a class="btn" href="#a_f_F35">ビッグバレル</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F36">ボーラー</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E16" style="display: none;">
+    <p>仕上げ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F39">シリコンポイント</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E21" style="display: none;">
+    <p>粗削り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F46">ウオノメビット</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F47">ボーラーフレイザー</a></li>
+        <li class="even"><a class="btn" href="#a_f_F48">ウオノメセット</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F49">ボーラーフレイザー</a></li>
+        <li class="even"><a class="btn" href="#a_f_F50">ボーラーフレイザー3本セット</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_E22" style="display: none;">
+    <p>仕上げ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_F53">ダイヤモンドボーラー</a></li>
+        <li class="odd"><a class="btn" href="#a_f_F54">シリコンポイント</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_F7" style="display: none;">
+    <p>粗削り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_G8">円盤ビット</a></li>
+        <li class="odd"><a class="btn" href="#a_f_G9">ビッグバレル</a></li>
+        <li class="even"><a class="btn" href="#a_f_G10">サンディングキャップ</a></li>
+        <li class="odd"><a class="btn" href="#a_f_G11">ダイヤ円盤ビット</a></li>
+        <li class="even"><a class="btn" href="#a_f_G12">メガコーン</a></li>
+        <li class="odd"><a class="btn" href="#a_f_G13">バルーン</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_F8" style="display: none;">
+    <p>仕上げ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_G19">シリコンポイント</a></li>
+        <li class="odd"><a class="btn" href="#a_f_G20">つるピカセット</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_F11" style="display: none;">
+    <p>粗削り</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_f_G26">円盤ビット</a></li>
+        <li class="odd"><a class="btn" href="#a_f_G27">バルーン</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_f_F12" style="display: none;">
+    <p>仕上げ</p>
+    <ul class="flexbox fw">
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- ここまでフット　ここからマシン・集塵機 -->
+
+<div id="q_m_C3" style="display: none;">
+    <p>サロンプロ仕様</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_D4">ROBO</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C4" style="display: none;">
+    <p>サロン1～2年目</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_D9">ROBO</a></li>
+        <li class="odd"><a class="btn" href="#a_m_D10">One</a></li>
+        <li class="even"><a class="btn" href="#a_m_11">POCO</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C5" style="display: none;">
+    <p>セルフメイン</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_D15">One</a></li>
+        <li class="odd"><a class="btn" href="#a_m_D16">SQUARE</a></li>
+        <li class="even"><a class="btn" href="#a_m_D17">ジャックス</a></li>
+        <li class="odd"><a class="btn" href="#a_m_D18">ピース</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_m_C6" style="display: none;">
+    <p>フット用高トルク</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_D21">Riki</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C9" style="display: none;">
+    <p>充電式</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_D24">ホースタイプ</a></li>
+        <li class="odd"><a class="btn" href="#q_m_D25">平置きタイプ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C10" style="display: none;">
+    <p>コード式</p>
+    <ul class="flexbox fw">
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_D24" style="display: none;">
+    <p>ホースタイプ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_E25">ヴァンスーサー</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_D25" style="display: none;">
+    <p>平置きタイプ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_E27">充電式</a></li>
+        <li class="odd"><a class="btn" href="#q_m_E28">コード式</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_E27" style="display: none;">
+    <p>充電式</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_F28">ダスティー充電式</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_E28" style="display: none;">
+    <p>コード式</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_F30">ダスティーコード式</a></li>
+        <li class="odd"><a class="btn" href="#a_m_F31">キューブ</a></li>
+        <li class="even"><a class="btn" href="#a_m_F32">DSC-100</a></li>
+        <li class="odd"><a class="btn" href="#a_m_F33">ヴァンスーサースクエアタイプ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C14" style="display: none;">
+    <p>本格仕様！本硬化~仮硬化</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_D30">置き型タイプ</a></li>
+        <li class="odd"><a class="btn" href="#q_m_D31">ハンディタイプ</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_C15" style="display: none;">
+    <p>仮硬化に便利！</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_D36">スティックライト</a></li>
+        <li class="odd"><a class="btn" href="#a_m_D37">MINI?</a></li>
+        <li class="even"><a class="btn" href="#a_m_D38">タッチライト</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_D30" style="display: none;">
+    <p>置き型タイプ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_E31">ステンライト充電式</a></li>
+        <li class="odd"><a class="btn" href="#a_m_E32">ステンライトコンセント式</a></li>
+        <li class="even"><a class="btn" href="#a_m_E33">WF4-Sコンセント式</a></li>
+        <li class="odd"><a class="btn" href="#a_m_E34">K2</a></li>
+        <li class="even"><a class="btn" href="#a_m_E35">F3</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<div id="q_m_D31" style="display: none;">
+    <p>ハンディタイプ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_m_E39">ブライトスティック</a></li>
+        <li class="odd"><a class="btn" href="#a_m_E40">パワースティックライト</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+<!-- ここまでマシン　ここからダイヤモンド -->
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_C6" style="display: none;">
+    <p>ハンド用ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_D7">両面ファイル</a></li>
+        <li class="odd"><a class="btn" href="#q_d_D8">片面ファイル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_C7" style="display: none;">
+    <p>フット用ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_D12">両面ファイル</a></li>
+        <li class="odd"><a class="btn" href="#q_d_D13">片面ファイル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_D7" style="display: none;">
+    <p>両面ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_E8">薄さ重視（仕上用、自爪）</a></li>
+        <li class="odd"><a class="btn" href="#q_d_E9">厚みのある爪</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_E8" style="display: none;">
+    <p>薄さ重視（仕上用、自爪）</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_d_F9">ハイグレードダイヤモンドファイル</a></li>
+        <li class="odd"><a class="btn" href="#a_d_F10">ダイヤモンドファイル　スタンダード 180G 両面</a></li>
+        <li class="even"><a class="btn" href="#a_d_F11">ステンレス製両面ダイヤモンドファイル 【スタンダード】</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_E9" style="display: none;">
+    <p>厚みのある爪</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_d_F16">セラダイヤモンドファイル　両面　#200／#240</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_D8" style="display: none;">
+    <p>片面ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_d_E13">セラダイヤモンドファイル　#180</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+
+
+
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_D12" style="display: none;">
+    <p>両面ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_d_F20">ステンレス製両面ダイヤモンドファイル 【スタンダード】</a></li>
+        <li class="odd"><a class="btn" href="#a_d_F21">ステンレス製両面ダイヤモンドファイル 【ミニ】</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_d_D13" style="display: none;">
+    <p>片面ファイル</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#a_d_F26">【日本トラブルネイルケア協会 みなもン先生監修】 ステンレス製 フット用 ショートファイル#100</a></li>
+        <li class="odd"><a class="btn" href="#a_d_F27">【日本トラブルネイルケア協会 みなもン先生監修】 ステンレス製 フット用 ショートファイル#240</a></li>
+        <li class="even"><a class="btn" href="#a_d_F28">セラダイヤモンドファイル　フット用　200#</a></li>
+
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 次の選択肢 -->
+  
+  
+ <div id="q_06" style="display: none;">
+        <p>あなたにおすすめなのは…</p>
+        <h4>『答え①』です！！</h4>
+   <span><a class="btn" href="#q_01">もどる</a></span>
+</div>
+ 
+<!-- 選択肢の答え① -->
+  
+  <div id="q_07" style="display: none;">
+        <p>あなたにおすすめなのは…</p>
+        <h4>『答え②』です！！</h4>
+     <span><a class="btn" href="#q_01">もどる</a></span>
+</div>
+ 
+<!-- 選択肢の答え② -->
+</div>
+
+</html>

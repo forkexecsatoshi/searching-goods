@@ -5,7 +5,6 @@
 
 # ファイル構成
 
-.
 ├── decision_AI: 前作ってた html ベースのファイル達
 ├── node_modules: package.json を元にインストールしたライブラリ達
 ├── public

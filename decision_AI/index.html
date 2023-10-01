@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="sample.js"></script>
+
+</head>
+
+<div class="choose_box">
+
+<!-- 最初の選択肢 -->
+<div id="q1" class="fit">
+    <p>質問1</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_B1">ビットを選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B2">マシンを選ぶ</a></li>
+        <li class="even"><a class="btn" href="#q_B3">集塵機を選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B4">ライトを選ぶ</a></li>
+        <li class="even"><a class="btn" href="#q_B5">ダイヤモンドファイルを選ぶ</a></li>
+        <li class="odd"><a class="btn" href="#q_B6"></a>その他</li>
+    </ul>
+    <p id="back" class="btn" href="#q1">前へ</p>
+    <p id="back" class="btn" href="#q1">トップへ戻る</p>
+    
+    <!-- <span><a class="btn" href="#q_01">もどる</a></span> -->
+</div>
+ 
+<!-- 次の選択肢 テンプレ -->
+<div id="q_B1" style="display: none;">
+    <p>ビットを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_h_C2">ハンド施術</a></li>
+        <li class="odd"><a class="btn" href="#q_h_C3">フット施術</a></li>
+    </ul>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+<div id="q_B2" style="display: none;">
+    <p>マシンを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C3">サロンプロ仕様</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C4">サロン1～2年目</a></li>
+        <li class="even"><a class="btn" href="#q_m_C5">セルフメイン</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C6">フット用高トルク</a></li>
+    </ul>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B3" style="display: none;">
+    <p>集塵機を選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C9">充電式</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C10">コード式</a></li>
+    </ul>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B4" style="display: none;">
+    <p>ライトを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_m_C14">本硬化～仮硬化</a></li>
+        <li class="odd"><a class="btn" href="#q_m_C15">仮硬化</a></li>
+    </ul>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_B5" style="display: none;">
+    <p>ダイヤモンドファイルを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_C6">ハンド用ファイル</a></li>
+        <li class="odd"><a class="btn" href="#q_d_C7">フット用ファイル</a></li>
+    </ul>
+</div>
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_h_C2" style="display: none;">
+    <p>ハンド施術</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_D3">オフ＆フィルイン</a></li>
+        <li class="odd"><a class="btn" href="#q_d_D4">ケア＆プレパレーション</a></li>
+        <li class="even"><a class="btn" href="#q_d_D5">ストーンオフ</a></li>
+    </ul>
+</div>
+<!-- ここまで -->
+
+ <!-- 次の選択肢 テンプレ -->
+ <div id="q_h_C3" style="display: none;">
+    <p>フット施術</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_d_D3">オフ＆フィルイン</a></li>
+        <li class="odd"><a class="btn" href="#q_d_D4">ケア＆プレパレーション</a></li>
+        <li class="even"><a class="btn" href="#q_d_D5">ストーンオフ</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 次の選択肢 --> 
+<div id="q_B1" style="display: none;">
+    <p>ビットを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_C1">ジェルオフ</a></li>
+        <li class="odd"><a class="btn" href="#q_C2">フィルイン</a></li>
+        <li class="even"><a class="btn" href="#q_C3">オフ&フィルイン</a></li>
+        <li class="odd"><a class="btn" href="#q_C4">ケア&プレパレーション</a></li>
+        <li class="even"><a class="btn" href="#q_C5">ストーンオフ</a></li>
+        <li class="odd"><a class="btn" href="#q_C6">フットケア</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q_A1">前へ</p>
+    <p id="back" class="btn" href="#q_A1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_B2" style="display: none;">
+   <p>マシンを選ぶ</p>
+   <ul class="flexbox fw">
+       <li class="even"><a class="btn" href="#q_C7">サロンメイン</a></li>
+       <li class="odd"><a class="btn" href="#q_C8">セルフ～サロン1年目</a></li>
+       <li class="even"><a class="btn" href="#q_C9">セルフメイン</a></li>
+   </ul>
+   <p id="back" class="btn" href="#q_A1">前へ</p>
+    <p id="back" class="btn" href="#q_A1">トップへ戻る</p>
+</div>
+
+<!-- 次の選択肢 テンプレ -->
+<div id="q_B3" style="display: none;">
+    <p>集塵機を選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_C10">充填式</a></li>
+        <li class="odd"><a class="btn" href="#q_C11">コード式</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q_A1">前へ</p>
+    <p id="back" class="btn" href="#q_A1">トップへ戻る</p>
+ </div>
+
+ <!-- 次の選択肢 テンプレ -->
+<div id="q_B4" style="display: none;">
+    <p>ダイヤモンドファイルを選ぶ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_C12">ハンド用ファイル</a></li>
+        <li class="odd"><a class="btn" href="#q_C13">フット用ファイル</a></li>
+    </ul>
+    <p id="back" class="btn" href="#q_A1">前へ</p>
+    <p id="back" class="btn" href="#q_A1">トップへ戻る</p>
+ </div>
+
+
+  <!-- 次の選択肢 テンプレ -->
+ <div id="q_B5" style="display: none;">
+    <p class="btn" href="#q_A1">お問い合わせへ</p>
+    <p id="back" class="btn" href="#q_A1">前へ</p>
+    <p id="back" class="btn" href="#q_A1">トップへ戻る</p>
+    <!-- <h4>『答え②』です！！</h4> -->
+ <!-- <span><a class="btn" href="#q_01">もどる</a></span> -->
+</div>
+
+  <!-- 次の選択肢 テンプレ -->
+<div id="q_C1" style="display: none;">
+    <p>ジェルオフ</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_D1">ハードジェル</a></li>
+        <li class="odd"><a class="btn" href="#q_D2">ソフトジェル</a></li>
+        <li class="odd"><a class="btn" href="#q_D2">アクリル</a></li>
+    </ul>
+ </div>
+
+
+
+
+ 
+
+
+<!-- 次の選択肢 --> 
+ 
+<div id="q_06" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_12">ハードジェル</a></li>
+        <li class="odd"><a class="btn" href="#q_13">ソフトジェル</a></li>
+        <li class="even"><a class="btn" href="#q_14">ジェルオフ</a></li>
+    </ul>
+</div>
+<!-- 次の選択肢 --> 
+<div id="q_12" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_15">サロンでがっつり時短目的</a></li>
+        <li class="odd"><a class="btn" href="#q_16">ゆっくり丁寧に初心者向け</a></li>
+    </ul>
+</div>
+
+<!-- 次の選択肢 --> 
+<div id="q_15" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_17">面取り</a></li>
+    </ul>
+</div>
+
+<!-- 次の選択肢 --> 
+<div id="q_16" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_19">ブラックビットM、C</a></li>
+    </ul>
+</div>
+
+<div id="q_19" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_20">ブラックビットM、C</a></li>
+    </ul>
+</div>
+
+<!-- 次の選択肢 --> 
+<div id="q_17" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_18">ブラックビットXXC、XC</a></li>
+    </ul>
+</div>
+
+<!-- 次の選択肢 --> 
+<div id="q_04" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_06">選択肢3-1</a></li>
+        <li class="odd"><a class="btn" href="#q_07">選択肢3-2</a></li>
+    </ul>
+</div>
+<!-- 次の選択肢 --> 
+  
+ <div id="q_05" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_06">選択肢4-1</a></li>
+        <li class="odd"><a class="btn" href="#q_07">選択肢4-2</a></li>
+    </ul>
+    </div>
+<!-- 次の選択肢 -->
+  
+  
+ <div id="q_06" style="display: none;">
+        <p>あなたにおすすめなのは…</p>
+        <h4>『答え①』です！！</h4>
+   <span><a class="btn" href="#q_01">もどる</a></span>
+</div>
+ 
+<!-- 選択肢の答え① -->
+  
+  <div id="q_07" style="display: none;">
+        <p>あなたにおすすめなのは…</p>
+        <h4>『答え②』です！！</h4>
+     <span><a class="btn" href="#q_01">もどる</a></span>
+</div>
+ 
+<!-- 選択肢の答え② -->
+</div>
+
+</html>

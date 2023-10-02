@@ -1,24 +1,25 @@
 import React from "react";
 import logo from "./logo.svg";
 import styled from "styled-components";
+import QA from "./component/QA";
 
 const App = () => {
   return (
     <Container>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QA
+        question="質問１"
+        choices={[
+          { text: "ビットを選ぶ", value: 1 },
+          { text: "マシンを選ぶ", value: 1 },
+          { text: "集塵機を選ぶ", value: 1 },
+          { text: "ライトを選ぶ", value: 1 },
+          { text: "ダイヤモンドファイルを選ぶ", value: 1 },
+          { text: "その他", value: 1 },
+        ]}
+        onClick={() => {}}
+        onClickPrevious={() => {}}
+        onClickTop={() => {}}
+      />
     </Container>
   );
 };
@@ -26,40 +27,4 @@ const App = () => {
 export default App;
 
 // styled-componentsというライブラリを用いてこのようにcssを記述することができる
-const Container = styled.div`
-  text-align: center;
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-
-  .App-link {
-    color: #61dafb;
-  }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-`;
+const Container = styled.div``;

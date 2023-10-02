@@ -1,10 +1,15 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import colors from "../asset/theme";
 
-const Button = () => {
-  return <Container>ボタンテキスト</Container>;
-};
+interface ButtonProps {
+  text: string;
+  onClick: () => void;
+}
+
+const Button = memo((props: ButtonProps) => {
+  return <Container onClick={props.onClick}>{props.text}</Container>;
+});
 
 export default Button;
 
@@ -19,6 +24,7 @@ const Container = styled.button`
   border: 2px solid ${colors.blue};
   text-decoration: none;
   border-radius: 6px;
+  cursor: pointer;
 
   &:hover {
     background-color: ${colors.white};

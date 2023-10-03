@@ -1,10 +1,13 @@
 import { memo } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import { Choice, Question } from "../asset/type";
 import Button from "./Button";
 
 interface QAProps {
   question: Question;
+  currentQuestion: number;
   onClick: (value: Choice) => void;
   onClickPrevious: () => void;
   onClickTop: () => void;
@@ -17,14 +20,22 @@ const QA = memo((props: QAProps) => {
       <ButtonWrapper>
         {props.question[1].map((choice) => {
           return (
-            <Button text={choice.text} onClick={() => props.onClick(choice)} />
+            <Col lg={6}>
+              <Button
+                text={choice.text}
+                onClick={() => props.onClick(choice)}
+                key={choice.text}
+              />
+            </Col>
           );
         })}
       </ButtonWrapper>
-      <BackButtonWrapper>
-        <Button text="前へ" onClick={props.onClickPrevious} />
-        <Button text="トップへ戻る" onClick={props.onClickTop} />
-      </BackButtonWrapper>
+      {props.currentQuestion !== 0 && (
+        <BackButtonWrapper>
+          <Button text="前へ" onClick={props.onClickPrevious} />
+          <Button text="トップへ戻る" onClick={props.onClickTop} />
+        </BackButtonWrapper>
+      )}
     </Container>
   );
 });
@@ -41,13 +52,11 @@ const Container = styled.div`
   }
 `;
 
-const ButtonWrapper = styled.div`
+const ButtonWrapper = styled(Row)`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  button {
-    width: 45%;
+  > * {
+    margin-bottom: 12px;
   }
 `;
 

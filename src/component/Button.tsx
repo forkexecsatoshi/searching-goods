@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import styled from "styled-components";
 import colors from "../asset/theme";
 
@@ -24,6 +24,7 @@ const Container = styled.button`
   border: 2px solid ${colors.blue};
   text-decoration: none;
   border-radius: 6px;
+  width: 100%;
   cursor: pointer;
 
   &:hover {

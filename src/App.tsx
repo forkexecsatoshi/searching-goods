@@ -1,13 +1,11 @@
 import { useState } from "react";
-import styled, { CSSObject } from "styled-components";
+import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import QA from "./component/QA";
-import { questions } from "./asset/question";
-import { Choice } from "./asset/type";
-import ReplayButton from "./component/button/ReplayButton";
-import PreviousButton from "./component/button/PreviousButton";
+import { Choice, Stage } from "./asset/type";
+import Start from "./component/pages/Start";
+import Question from "./component/pages/Question";
 
 const App = () => {
   // 回答済みの選択肢を格納する
@@ -17,7 +15,11 @@ const App = () => {
   // 直近で回答した番号
   const [currentQuestionNum, setCurrentQuestionNum] = useState<number>(0);
   // アンケート終了かどうか
-  const [isFinish, setIsFinish] = useState<boolean>(false);
+  const [currentStage, setCurrentStage] = useState<Stage>("top");
+
+  const onClickStart = () => {
+    setCurrentStage("question");
+  };
 
   // topへ戻る、または選択肢をクリックした時の関数
   const onClickButton = (choice?: Choice) => {
@@ -40,7 +42,7 @@ const App = () => {
       setCurrentQuestionNum(choice.value);
     } else {
       // アンケート終了
-      setIsFinish(true);
+      setCurrentStage("finish");
     }
   };
 
@@ -49,49 +51,35 @@ const App = () => {
     setCurrentQuestionNum(previousQuestionNum);
     setAnsweredQuestion((prev) => [prev.pop()!]);
   };
-  return (
-    <RootContainer>
-      {!isFinish ? (
-        <>
-          {currentQuestionNum !== 0 && (
-            <ReplayButton
-              text="診断をやり直す"
-              onClick={() => onClickButton()}
-              css={replayButtonStyle}
-            />
-          )}
-          <QA
-            currentQuestion={currentQuestionNum}
-            question={questions[currentQuestionNum]}
-            onClick={onClickButton}
-          />
-          {currentQuestionNum !== 0 && (
-            <PreviousButton
-              text="前の質問に戻る"
-              onClick={onClickPrevious}
-              css={previousButtonStyle}
-            />
-          )}
-        </>
-      ) : (
-        <Row>
-          <Col>
-            {answeredQuestion.map((choice) => {
-              return choice.text;
-            })}
-            を選んだあなたにおすすめの商品はこれ！
-          </Col>
-        </Row>
-      )}
-    </RootContainer>
-  );
+
+  const stageDom = {
+    top: <Start onClick={onClickStart} />,
+    question: (
+      <Question
+        currentQuestionNum={currentQuestionNum}
+        onClickReplay={() => onClickButton()}
+        onClickChoice={onClickButton}
+        onClickPrevious={onClickPrevious}
+      />
+    ),
+    finish: (
+      <Row>
+        <Col>
+          {answeredQuestion.map((choice) => {
+            return choice.text;
+          })}
+          を選んだあなたにおすすめの商品はこれ！
+        </Col>
+      </Row>
+    ),
+  };
+  return <RootContainer>{stageDom[currentStage]}</RootContainer>;
 };
 
 export default App;
 
 const RootContainer = styled(Container)`
   height: 100vh;
-  padding-top: 20px;
   align-items: end;
   display: flex;
   justify-content: center;
@@ -101,15 +89,3 @@ const RootContainer = styled(Container)`
   padding-left: 0;
   position: relative;
 `;
-
-const replayButtonStyle: CSSObject = {
-  position: "absolute",
-  top: "12px",
-  left: "12px",
-};
-
-const previousButtonStyle: CSSObject = {
-  position: "absolute",
-  bottom: "12px",
-  left: "32px",
-};

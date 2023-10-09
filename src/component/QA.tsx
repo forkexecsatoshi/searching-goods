@@ -1,7 +1,7 @@
 import { memo } from "react";
 import styled from "styled-components";
 import { Choice, Question } from "../asset/type";
-import Button from "./button/Button";
+import QuestionButton from "./button/QuestionButton";
 import colors from "../asset/theme";
 
 interface QAProps {
@@ -20,7 +20,7 @@ const QA = memo((props: QAProps) => {
       <ButtonWrapper>
         {props.question[1].map((choice, index) => {
           return (
-            <Button
+            <QuestionButton
               key={`item_${index}`}
               text={choice.text}
               onClick={() => props.onClick(choice)}

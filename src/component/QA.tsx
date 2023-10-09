@@ -1,41 +1,33 @@
 import { memo } from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import { Choice, Question } from "../asset/type";
-import Button from "./Button";
+import Button from "./button/Button";
+import colors from "../asset/theme";
 
 interface QAProps {
   question: Question;
   currentQuestion: number;
   onClick: (value: Choice) => void;
-  onClickPrevious: () => void;
-  onClickTop: () => void;
 }
 
 const QA = memo((props: QAProps) => {
   return (
     <Container>
-      <h2>{props.question[0]["title"]}</h2>
+      <TitleWrapper>
+        <Title>Question</Title>
+        <Content>{props.question[0]["title"]}</Content>
+      </TitleWrapper>
       <ButtonWrapper>
-        {props.question[1].map((choice) => {
+        {props.question[1].map((choice, index) => {
           return (
-            <Col lg={6}>
-              <Button
-                text={choice.text}
-                onClick={() => props.onClick(choice)}
-                key={choice.text}
-              />
-            </Col>
+            <Button
+              key={`item_${index}`}
+              text={choice.text}
+              onClick={() => props.onClick(choice)}
+            />
           );
         })}
       </ButtonWrapper>
-      {props.currentQuestion !== 0 && (
-        <BackButtonWrapper>
-          <Button text="前へ" onClick={props.onClickPrevious} />
-          <Button text="トップへ戻る" onClick={props.onClickTop} />
-        </BackButtonWrapper>
-      )}
     </Container>
   );
 });
@@ -46,26 +38,35 @@ export default QA;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  h2 {
-    text-align: center;
-  }
+  gap: 36px;
+  height: 80%;
+  background: ${colors.primaryBg};
+  width: 100%;
 `;
 
-const ButtonWrapper = styled(Row)`
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+const Title = styled.h1`
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+`;
+
+const Content = styled.h2`
+  font-weight: 500;
+  font-size: 32px;
+`;
+
+const ButtonWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  > * {
-    margin-bottom: 12px;
-  }
-`;
-
-const BackButtonWrapper = styled.div`
-  display: flex;
   flex-direction: column;
+  gap: 16px;
   align-items: center;
-  gap: 10px;
-  button {
-    width: 30%;
-  }
 `;

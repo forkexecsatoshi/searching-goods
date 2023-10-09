@@ -1,11 +1,13 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { CSSObject } from "styled-components";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import QA from "./component/QA";
 import { questions } from "./asset/question";
 import { Choice } from "./asset/type";
+import ReplayButton from "./component/button/ReplayButton";
+import PreviousButton from "./component/button/PreviousButton";
 
 const App = () => {
   // 回答済みの選択肢を格納する
@@ -50,13 +52,27 @@ const App = () => {
   return (
     <RootContainer>
       {!isFinish ? (
-        <QA
-          currentQuestion={currentQuestionNum}
-          question={questions[currentQuestionNum]}
-          onClick={onClickButton}
-          onClickPrevious={onClickPrevious}
-          onClickTop={() => onClickButton()}
-        />
+        <>
+          {currentQuestionNum !== 0 && (
+            <ReplayButton
+              text="診断をやり直す"
+              onClick={() => onClickButton()}
+              css={replayButtonStyle}
+            />
+          )}
+          <QA
+            currentQuestion={currentQuestionNum}
+            question={questions[currentQuestionNum]}
+            onClick={onClickButton}
+          />
+          {currentQuestionNum !== 0 && (
+            <PreviousButton
+              text="前の質問に戻る"
+              onClick={onClickPrevious}
+              css={previousButtonStyle}
+            />
+          )}
+        </>
       ) : (
         <Row>
           <Col>
@@ -76,4 +92,24 @@ export default App;
 const RootContainer = styled(Container)`
   height: 100vh;
   padding-top: 20px;
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
 `;
+
+const replayButtonStyle: CSSObject = {
+  position: "absolute",
+  top: "12px",
+  left: "12px",
+};
+
+const previousButtonStyle: CSSObject = {
+  position: "absolute",
+  bottom: "12px",
+  left: "32px",
+};

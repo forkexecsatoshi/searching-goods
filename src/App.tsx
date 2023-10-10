@@ -1,13 +1,11 @@
 import { useState } from "react";
-import styled, { CSSObject } from "styled-components";
+import styled, { css } from "styled-components";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import QA from "./component/QA";
-import { questions } from "./asset/question";
-import { Choice } from "./asset/type";
-import ReplayButton from "./component/button/ReplayButton";
-import PreviousButton from "./component/button/PreviousButton";
+import { Choice, Stage } from "./asset/type";
+import colors from "./asset/theme";
+import Start from "./component/pages/Start";
+import Question from "./component/pages/Question";
+import Finish from "./component/pages/Finish";
 
 const App = () => {
   // 回答済みの選択肢を格納する
@@ -17,18 +15,23 @@ const App = () => {
   // 直近で回答した番号
   const [currentQuestionNum, setCurrentQuestionNum] = useState<number>(0);
   // アンケート終了かどうか
-  const [isFinish, setIsFinish] = useState<boolean>(false);
+  const [currentStage, setCurrentStage] = useState<Stage>("top");
 
-  // topへ戻る、または選択肢をクリックした時の関数
-  const onClickButton = (choice?: Choice) => {
-    // topに戻る場合、stateを初期値に戻す
-    if (!choice) {
-      setAnsweredQuestion([]);
-      setPreviousQuestionNum(0);
-      setCurrentQuestionNum(0);
-      return;
-    }
+  // 診断をスタートするボタンをクリックした時の関数
+  const onClickStart = () => {
+    setCurrentStage("question");
+  };
 
+  // TOPに戻るまたは診断をやり直す時の関数
+  const onClickRetry = (nextStage: Stage) => {
+    setAnsweredQuestion([]);
+    setPreviousQuestionNum(0);
+    setCurrentQuestionNum(0);
+    setCurrentStage(nextStage);
+  };
+
+  // 選択肢をクリックした時の関数
+  const onClickChoice = (choice: Choice) => {
     // 回答済みの選択肢に現在選択した項目を追加
     setAnsweredQuestion((prev) => [...prev, choice]);
 
@@ -40,7 +43,7 @@ const App = () => {
       setCurrentQuestionNum(choice.value);
     } else {
       // アンケート終了
-      setIsFinish(true);
+      setCurrentStage("finish");
     }
   };
 
@@ -49,49 +52,34 @@ const App = () => {
     setCurrentQuestionNum(previousQuestionNum);
     setAnsweredQuestion((prev) => [prev.pop()!]);
   };
+
+  const stageDom = {
+    top: <Start onClick={onClickStart} />,
+    question: (
+      <Question
+        currentQuestionNum={currentQuestionNum}
+        onClickReplay={() => onClickRetry("question")}
+        onClickChoice={onClickChoice}
+        onClickPrevious={onClickPrevious}
+      />
+    ),
+    finish: (
+      <Finish
+        answeredQuestion={answeredQuestion}
+        onClickTop={() => onClickRetry("top")}
+        onClickRetry={() => onClickRetry("question")}
+      />
+    ),
+  };
   return (
-    <RootContainer>
-      {!isFinish ? (
-        <>
-          {currentQuestionNum !== 0 && (
-            <ReplayButton
-              text="診断をやり直す"
-              onClick={() => onClickButton()}
-              css={replayButtonStyle}
-            />
-          )}
-          <QA
-            currentQuestion={currentQuestionNum}
-            question={questions[currentQuestionNum]}
-            onClick={onClickButton}
-          />
-          {currentQuestionNum !== 0 && (
-            <PreviousButton
-              text="前の質問に戻る"
-              onClick={onClickPrevious}
-              css={previousButtonStyle}
-            />
-          )}
-        </>
-      ) : (
-        <Row>
-          <Col>
-            {answeredQuestion.map((choice) => {
-              return choice.text;
-            })}
-            を選んだあなたにおすすめの商品はこれ！
-          </Col>
-        </Row>
-      )}
-    </RootContainer>
+    <RootContainer stage={currentStage}>{stageDom[currentStage]}</RootContainer>
   );
 };
 
 export default App;
 
-const RootContainer = styled(Container)`
+const RootContainer = styled(Container)<{ stage: Stage }>`
   height: 100vh;
-  padding-top: 20px;
   align-items: end;
   display: flex;
   justify-content: center;
@@ -100,16 +88,9 @@ const RootContainer = styled(Container)`
   padding-right: 0;
   padding-left: 0;
   position: relative;
+  ${({ stage }) =>
+    stage === "finish" &&
+    css`
+      background: ${colors.primaryBg};
+    `};
 `;
-
-const replayButtonStyle: CSSObject = {
-  position: "absolute",
-  top: "12px",
-  left: "12px",
-};
-
-const previousButtonStyle: CSSObject = {
-  position: "absolute",
-  bottom: "12px",
-  left: "32px",
-};

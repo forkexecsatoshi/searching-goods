@@ -2,7 +2,6 @@ import { memo } from "react";
 import styled from "styled-components";
 import { Choice, Question } from "../asset/type";
 import QuestionButton from "./button/QuestionButton";
-import colors from "../asset/theme";
 import Wave from "react-wavify";
 
 interface QAProps {

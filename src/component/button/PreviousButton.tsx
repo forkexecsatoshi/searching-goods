@@ -22,8 +22,8 @@ const PreviousButton = memo((props: PreviousButtonProps) => {
         <path
           d="M9 1L2 11H127.5"
           stroke="#333333"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
         />
       </Icon>
     </Container>

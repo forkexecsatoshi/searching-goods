@@ -25,4 +25,8 @@ const Container = styled.button`
   border: none;
   cursor: pointer;
   font-weight: 500;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 `;

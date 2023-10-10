@@ -1,11 +1,11 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { Choice, Stage } from "./asset/type";
+import colors from "./asset/theme";
 import Start from "./component/pages/Start";
 import Question from "./component/pages/Question";
+import Finish from "./component/pages/Finish";
 
 const App = () => {
   // 回答済みの選択肢を格納する
@@ -17,20 +17,21 @@ const App = () => {
   // アンケート終了かどうか
   const [currentStage, setCurrentStage] = useState<Stage>("top");
 
+  // 診断をスタートするボタンをクリックした時の関数
   const onClickStart = () => {
     setCurrentStage("question");
   };
 
-  // topへ戻る、または選択肢をクリックした時の関数
-  const onClickButton = (choice?: Choice) => {
-    // topに戻る場合、stateを初期値に戻す
-    if (!choice) {
-      setAnsweredQuestion([]);
-      setPreviousQuestionNum(0);
-      setCurrentQuestionNum(0);
-      return;
-    }
+  // TOPに戻るまたは診断をやり直す時の関数
+  const onClickRetry = (nextStage: Stage) => {
+    setAnsweredQuestion([]);
+    setPreviousQuestionNum(0);
+    setCurrentQuestionNum(0);
+    setCurrentStage(nextStage);
+  };
 
+  // 選択肢をクリックした時の関数
+  const onClickChoice = (choice: Choice) => {
     // 回答済みの選択肢に現在選択した項目を追加
     setAnsweredQuestion((prev) => [...prev, choice]);
 
@@ -57,28 +58,27 @@ const App = () => {
     question: (
       <Question
         currentQuestionNum={currentQuestionNum}
-        onClickReplay={() => onClickButton()}
-        onClickChoice={onClickButton}
+        onClickReplay={() => onClickRetry("question")}
+        onClickChoice={onClickChoice}
         onClickPrevious={onClickPrevious}
       />
     ),
     finish: (
-      <Row>
-        <Col>
-          {answeredQuestion.map((choice) => {
-            return choice.text;
-          })}
-          を選んだあなたにおすすめの商品はこれ！
-        </Col>
-      </Row>
+      <Finish
+        answeredQuestion={answeredQuestion}
+        onClickTop={() => onClickRetry("top")}
+        onClickRetry={() => onClickRetry("question")}
+      />
     ),
   };
-  return <RootContainer>{stageDom[currentStage]}</RootContainer>;
+  return (
+    <RootContainer stage={currentStage}>{stageDom[currentStage]}</RootContainer>
+  );
 };
 
 export default App;
 
-const RootContainer = styled(Container)`
+const RootContainer = styled(Container)<{ stage: Stage }>`
   height: 100vh;
   align-items: end;
   display: flex;
@@ -88,4 +88,9 @@ const RootContainer = styled(Container)`
   padding-right: 0;
   padding-left: 0;
   position: relative;
+  ${({ stage }) =>
+    stage === "finish" &&
+    css`
+      background: ${colors.primaryBg};
+    `};
 `;

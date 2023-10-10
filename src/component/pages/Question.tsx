@@ -1,14 +1,15 @@
 import { memo } from "react";
-import styled, { CSSObject } from "styled-components";
+import { CSSObject } from "styled-components";
 import { questions } from "../../asset/question";
 import ReplayButton from "../button/ReplayButton";
 import PreviousButton from "../button/PreviousButton";
 import QA from "../QA";
+import { Choice } from "../../asset/type";
 
 interface QuestionProps {
   currentQuestionNum: number;
   onClickReplay: () => void;
-  onClickChoice: () => void;
+  onClickChoice: (choice: Choice) => void;
   onClickPrevious: () => void;
 }
 
@@ -39,25 +40,6 @@ const Question = memo((props: QuestionProps) => {
 });
 
 export default Question;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  > .left-bg {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-  }
-  > .right-bg {
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-  }
-`;
 
 const replayButtonStyle: CSSObject = {
   position: "absolute",

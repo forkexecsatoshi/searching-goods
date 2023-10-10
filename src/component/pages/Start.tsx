@@ -46,7 +46,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 40px;
+  font-size: 32px;
 `;
 
 const Content = styled.p`

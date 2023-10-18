@@ -42,6 +42,8 @@ const App = () => {
     setAnsweredQuestion([]);
     setPreviousQuestionValue("");
     setCurrentQuestionValue("");
+    setCurrentQuestion(questions[0]);
+    setQuestionArray(questions);
     setCurrentStage(nextStage);
   };
 
@@ -51,22 +53,27 @@ const App = () => {
       case "ビットを選ぶ":
         setCurrentQuestion(bitQuestions[0]);
         setQuestionArray(bitQuestions);
+        setPreviousQuestionValue(choice);
         break;
       case "マシンを選ぶ":
         setCurrentQuestion(machineQuestions[0]);
         setQuestionArray(machineQuestions);
+        setPreviousQuestionValue(choice);
         break;
       case "集塵機を選ぶ":
         setCurrentQuestion(dustCollectorQuestions[0]);
         setQuestionArray(dustCollectorQuestions);
+        setPreviousQuestionValue(choice);
         break;
       case "ライトを選ぶ":
         setCurrentQuestion(lightQuestions[0]);
         setQuestionArray(lightQuestions);
+        setPreviousQuestionValue(choice);
         break;
       case "ダイヤモンドファイルを選ぶ":
         setCurrentQuestion(diamondFileQuestions[0]);
         setQuestionArray(diamondFileQuestions);
+        setPreviousQuestionValue(choice);
         break;
       default:
         const nextQuestion = questionArray.filter(
@@ -77,11 +84,11 @@ const App = () => {
         } else {
           setCurrentQuestion(nextQuestion[0]);
         }
+        // 前回回答した回答を更新
+        setPreviousQuestionValue(currentQuestionValue);
     }
     // 回答済みの選択肢に現在選択した項目を追加
     setAnsweredQuestion((prev) => [...prev, choice]);
-    // 前回回答した回答を更新
-    setPreviousQuestionValue(currentQuestionValue);
     // 次の設問に移動する
     setCurrentQuestionValue(choice);
   };
@@ -89,6 +96,7 @@ const App = () => {
   // 前へ戻るをクリック時の関数
   const onClickPrevious = () => {
     console.log(currentQuestionValue);
+    // TODO: ここの実装
     setCurrentQuestionValue(previousQuestionValue);
     setAnsweredQuestion((prev) => [prev.pop()!]);
   };

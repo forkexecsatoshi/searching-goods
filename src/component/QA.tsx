@@ -1,13 +1,12 @@
 import { memo } from "react";
 import styled from "styled-components";
-import { Choice, Question } from "../asset/type";
+import { QuestionType } from "../asset/type";
 import QuestionButton from "./button/QuestionButton";
 import Wave from "react-wavify";
 
 interface QAProps {
-  question: Question;
-  currentQuestion: number;
-  onClick: (value: Choice) => void;
+  onClick: (value: string) => void;
+  currentQuestion: QuestionType;
 }
 
 const QA = memo((props: QAProps) => {
@@ -15,14 +14,14 @@ const QA = memo((props: QAProps) => {
     <Container>
       <TitleWrapper>
         <Title>Question</Title>
-        <Content>{props.question[0]["title"]}</Content>
+        <Content>{props.currentQuestion[0]["title"]}</Content>
       </TitleWrapper>
       <ButtonWrapper>
-        {props.question[1].map((choice, index) => {
+        {props.currentQuestion[1].map((choice, index) => {
           return (
             <QuestionButton
               key={`item_${index}`}
-              text={choice.text}
+              text={choice}
               onClick={() => props.onClick(choice)}
             />
           );

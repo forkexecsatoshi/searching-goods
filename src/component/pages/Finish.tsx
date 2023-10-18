@@ -1,13 +1,12 @@
 import { memo } from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
-import { Choice } from "../../asset/type";
 import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
 
 interface FinishProps {
-  answeredQuestion: Choice[];
+  answeredQuestion: string[];
   onClickTop: () => void;
   onClickRetry: () => void;
 }

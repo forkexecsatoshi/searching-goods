@@ -1,21 +1,36 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Container from "react-bootstrap/Container";
-import { Choice, Stage } from "./asset/type";
+import { Stage } from "./asset/type";
 import colors from "./asset/theme";
 import Start from "./component/pages/Start";
 import Question from "./component/pages/Question";
 import Finish from "./component/pages/Finish";
+import {
+  questions,
+  bitQuestions,
+  machineQuestions,
+  dustCollectorQuestions,
+  lightQuestions,
+  diamondFileQuestions,
+} from "./asset/question";
+import { QuestionType } from "./asset/type";
 
 const App = () => {
   // 回答済みの選択肢を格納する
-  const [answeredQuestion, setAnsweredQuestion] = useState<Choice[]>([]);
+  const [answeredQuestion, setAnsweredQuestion] = useState<string[]>([]);
   // 前回回答した番号
-  const [previousQuestionNum, setPreviousQuestionNum] = useState<number>(0);
+  const [previousQuestionValue, setPreviousQuestionValue] =
+    useState<string>("");
   // 直近で回答した番号
-  const [currentQuestionNum, setCurrentQuestionNum] = useState<number>(0);
+  const [currentQuestionValue, setCurrentQuestionValue] = useState<string>("");
   // アンケート終了かどうか
   const [currentStage, setCurrentStage] = useState<Stage>("top");
+
+  const [currentQuestion, setCurrentQuestion] = useState<QuestionType>(
+    questions[0]
+  );
+  const [questionArray, setQuestionArray] = useState<QuestionType[]>(questions);
 
   // 診断をスタートするボタンをクリックした時の関数
   const onClickStart = () => {
@@ -25,31 +40,56 @@ const App = () => {
   // TOPに戻るまたは診断をやり直す時の関数
   const onClickRetry = (nextStage: Stage) => {
     setAnsweredQuestion([]);
-    setPreviousQuestionNum(0);
-    setCurrentQuestionNum(0);
+    setPreviousQuestionValue("");
+    setCurrentQuestionValue("");
     setCurrentStage(nextStage);
   };
 
   // 選択肢をクリックした時の関数
-  const onClickChoice = (choice: Choice) => {
+  const onClickChoice = (choice: string) => {
+    switch (choice) {
+      case "ビットを選ぶ":
+        setCurrentQuestion(bitQuestions[0]);
+        setQuestionArray(bitQuestions);
+        break;
+      case "マシンを選ぶ":
+        setCurrentQuestion(machineQuestions[0]);
+        setQuestionArray(machineQuestions);
+        break;
+      case "集塵機を選ぶ":
+        setCurrentQuestion(dustCollectorQuestions[0]);
+        setQuestionArray(dustCollectorQuestions);
+        break;
+      case "ライトを選ぶ":
+        setCurrentQuestion(lightQuestions[0]);
+        setQuestionArray(lightQuestions);
+        break;
+      case "ダイヤモンドファイルを選ぶ":
+        setCurrentQuestion(diamondFileQuestions[0]);
+        setQuestionArray(diamondFileQuestions);
+        break;
+      default:
+        const nextQuestion = questionArray.filter(
+          (question) => question[0].answer === choice
+        );
+        if (nextQuestion.length === 0) {
+          setCurrentStage("finish");
+        } else {
+          setCurrentQuestion(nextQuestion[0]);
+        }
+    }
     // 回答済みの選択肢に現在選択した項目を追加
     setAnsweredQuestion((prev) => [...prev, choice]);
-
-    // 選択肢がクリックされた場合
-    if (!Number.isNaN(choice.value)) {
-      // 前回回答した番号を更新
-      setPreviousQuestionNum(currentQuestionNum);
-      // 次の設問に移動する
-      setCurrentQuestionNum(choice.value);
-    } else {
-      // アンケート終了
-      setCurrentStage("finish");
-    }
+    // 前回回答した回答を更新
+    setPreviousQuestionValue(currentQuestionValue);
+    // 次の設問に移動する
+    setCurrentQuestionValue(choice);
   };
 
   // 前へ戻るをクリック時の関数
   const onClickPrevious = () => {
-    setCurrentQuestionNum(previousQuestionNum);
+    console.log(currentQuestionValue);
+    setCurrentQuestionValue(previousQuestionValue);
     setAnsweredQuestion((prev) => [prev.pop()!]);
   };
 
@@ -57,7 +97,8 @@ const App = () => {
     top: <Start onClick={onClickStart} />,
     question: (
       <Question
-        currentQuestionNum={currentQuestionNum}
+        currentQuestionValue={currentQuestionValue}
+        currentQuestion={currentQuestion}
         onClickReplay={() => onClickRetry("question")}
         onClickChoice={onClickChoice}
         onClickPrevious={onClickPrevious}

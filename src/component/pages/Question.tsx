@@ -6,9 +6,9 @@ import { QuestionType } from "../../asset/type";
 import QA from "../QA";
 
 interface QuestionProps {
-  currentQuestionValue: string;
+  currentQuestionTitle: string;
   onClickReplay: () => void;
-  onClickChoice: (choice: string) => void;
+  onClickChoice: (choice: string, title: string) => void;
   onClickPrevious: () => void;
   currentQuestion: QuestionType;
 }
@@ -16,7 +16,7 @@ interface QuestionProps {
 const Question = memo((props: QuestionProps) => {
   return (
     <>
-      {props.currentQuestionValue !== "" && (
+      {props.currentQuestionTitle !== "" && (
         <ReplayButton
           text="診断をやり直す"
           onClick={props.onClickReplay}
@@ -27,7 +27,7 @@ const Question = memo((props: QuestionProps) => {
         onClick={props.onClickChoice}
         currentQuestion={props.currentQuestion}
       />
-      {props.currentQuestionValue !== "" && (
+      {props.currentQuestionTitle !== "" && (
         <PreviousButton
           text="前の質問に戻る"
           onClick={props.onClickPrevious}

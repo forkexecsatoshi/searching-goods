@@ -19,17 +19,18 @@ import { QuestionType } from "./asset/type";
 const App = () => {
   // 回答済みの選択肢を格納する
   const [answeredQuestion, setAnsweredQuestion] = useState<string[]>([]);
-  // 前回回答した番号
-  const [previousQuestionValue, setPreviousQuestionValue] =
+  // 前回回答したタイトル
+  const [previousQuestionTitle, setPreviousQuestionTitle] =
     useState<string>("");
-  // 直近で回答した番号
-  const [currentQuestionValue, setCurrentQuestionValue] = useState<string>("");
+  // 直近で回答したタイトル
+  const [currentQuestionTitle, setCurrentQuestionTitle] = useState<string>("");
   // アンケート終了かどうか
   const [currentStage, setCurrentStage] = useState<Stage>("top");
-
+  // 現在の質問
   const [currentQuestion, setCurrentQuestion] = useState<QuestionType>(
     questions[0]
   );
+  // 質問の配列
   const [questionArray, setQuestionArray] = useState<QuestionType[]>(questions);
 
   // 診断をスタートするボタンをクリックした時の関数
@@ -40,40 +41,40 @@ const App = () => {
   // TOPに戻るまたは診断をやり直す時の関数
   const onClickRetry = (nextStage: Stage) => {
     setAnsweredQuestion([]);
-    setPreviousQuestionValue("");
-    setCurrentQuestionValue("");
+    setPreviousQuestionTitle("");
+    setCurrentQuestionTitle("");
     setCurrentQuestion(questions[0]);
     setQuestionArray(questions);
     setCurrentStage(nextStage);
   };
 
   // 選択肢をクリックした時の関数
-  const onClickChoice = (choice: string) => {
+  const onClickChoice = (choice: string, title: string) => {
     switch (choice) {
       case "ビットを選ぶ":
         setCurrentQuestion(bitQuestions[0]);
         setQuestionArray(bitQuestions);
-        setPreviousQuestionValue(choice);
+        setPreviousQuestionTitle(title);
         break;
       case "マシンを選ぶ":
         setCurrentQuestion(machineQuestions[0]);
         setQuestionArray(machineQuestions);
-        setPreviousQuestionValue(choice);
+        setPreviousQuestionTitle(title);
         break;
       case "集塵機を選ぶ":
         setCurrentQuestion(dustCollectorQuestions[0]);
         setQuestionArray(dustCollectorQuestions);
-        setPreviousQuestionValue(choice);
+        setPreviousQuestionTitle(title);
         break;
       case "ライトを選ぶ":
         setCurrentQuestion(lightQuestions[0]);
         setQuestionArray(lightQuestions);
-        setPreviousQuestionValue(choice);
+        setPreviousQuestionTitle(title);
         break;
       case "ダイヤモンドファイルを選ぶ":
         setCurrentQuestion(diamondFileQuestions[0]);
         setQuestionArray(diamondFileQuestions);
-        setPreviousQuestionValue(choice);
+        setPreviousQuestionTitle(title);
         break;
       default:
         const nextQuestion = questionArray.filter(
@@ -85,19 +86,31 @@ const App = () => {
           setCurrentQuestion(nextQuestion[0]);
         }
         // 前回回答した回答を更新
-        setPreviousQuestionValue(currentQuestionValue);
+        setPreviousQuestionTitle(currentQuestionTitle);
     }
     // 回答済みの選択肢に現在選択した項目を追加
     setAnsweredQuestion((prev) => [...prev, choice]);
     // 次の設問に移動する
-    setCurrentQuestionValue(choice);
+    setCurrentQuestionTitle(title);
   };
 
   // 前へ戻るをクリック時の関数
   const onClickPrevious = () => {
-    console.log(currentQuestionValue);
-    // TODO: ここの実装
-    setCurrentQuestionValue(previousQuestionValue);
+    // 現在 === 前回の場合は最初の質問のため
+    if (currentQuestionTitle === previousQuestionTitle) {
+      onClickRetry("question");
+      return;
+    }
+    const nextQuestion = questionArray.filter(
+      (question) => question[0].answer === currentQuestionTitle
+    );
+    if (nextQuestion.length === 0) {
+      setCurrentQuestion(questions[0]);
+      setQuestionArray(questions);
+    } else {
+      setCurrentQuestion(nextQuestion[0]);
+    }
+    setCurrentQuestionTitle(previousQuestionTitle);
     setAnsweredQuestion((prev) => [prev.pop()!]);
   };
 
@@ -105,7 +118,7 @@ const App = () => {
     top: <Start onClick={onClickStart} />,
     question: (
       <Question
-        currentQuestionValue={currentQuestionValue}
+        currentQuestionTitle={currentQuestionTitle}
         currentQuestion={currentQuestion}
         onClickReplay={() => onClickRetry("question")}
         onClickChoice={onClickChoice}

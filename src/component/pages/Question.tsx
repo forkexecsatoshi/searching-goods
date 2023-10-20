@@ -16,13 +16,11 @@ interface QuestionProps {
 const Question = memo((props: QuestionProps) => {
   return (
     <>
-      {props.currentQuestionTitle !== "" && (
-        <ReplayButton
-          text="診断をやり直す"
-          onClick={props.onClickReplay}
-          css={replayButtonStyle}
-        />
-      )}
+      <ReplayButton
+        text="TOPに戻る"
+        onClick={props.onClickReplay}
+        css={replayButtonStyle}
+      />
       <QA
         onClick={props.onClickChoice}
         currentQuestion={props.currentQuestion}

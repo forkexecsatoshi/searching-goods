@@ -86,7 +86,7 @@ const App = () => {
       <Question
         currentQuestionTitle={currentQuestionTitle}
         currentQuestion={currentQuestion}
-        onClickReplay={() => onClickRetry("question")}
+        onClickReplay={() => onClickRetry("top")}
         onClickChoice={onClickChoice}
         onClickPrevious={onClickPrevious}
       />

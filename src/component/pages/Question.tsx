@@ -2,13 +2,13 @@ import { memo } from "react";
 import { CSSObject } from "styled-components";
 import ReplayButton from "../button/ReplayButton";
 import PreviousButton from "../button/PreviousButton";
-import { QuestionType } from "../../asset/type";
+import { QuestionType, QuestionAnswer } from "../../asset/type";
 import QA from "../QA";
 
 interface QuestionProps {
   currentQuestionTitle: string;
   onClickReplay: () => void;
-  onClickChoice: (choice: string, title: string) => void;
+  onClickChoice: (choice: QuestionAnswer, title: string) => void;
   onClickPrevious: () => void;
   currentQuestion: QuestionType;
 }

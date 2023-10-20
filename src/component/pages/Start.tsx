@@ -13,7 +13,7 @@ const Start = memo((props: StartProps) => {
     <Container>
       <img src={LeftBg} className="left-bg" alt="left-bg" />
       <img src={RightBg} className="right-bg" alt="right-bg" />
-      <Title>~~診断</Title>
+      <Title>あなたの欲しいが必ず見つかる WSPTプロダクト診断</Title>
       <Content>
         簡単な質問に答えるだけであなたに最適なアイテムを選びます。
         <br />

@@ -4,11 +4,13 @@ import Row from "react-bootstrap/Row";
 import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
+import { Result } from "../../asset/type";
 
 interface FinishProps {
   answeredQuestion: string[];
   onClickTop: () => void;
   onClickRetry: () => void;
+  result: Result;
 }
 
 const Finish = memo((props: FinishProps) => {
@@ -16,9 +18,15 @@ const Finish = memo((props: FinishProps) => {
     <Container>
       <Title>あなたにおすすめのアイテムは...</Title>
       <Row>
-        <ItemCard title="UVライト" imgUrl="uv.png" />
-        <ItemCard title="UVライト" imgUrl="uv.png" />
-        <ItemCard title="UVライト" imgUrl="uv.png" />
+        {props.result.map((item, index) => {
+          return (
+            <ItemCard
+              title={item.text}
+              imgUrl={item.img}
+              key={`item_${index}`}
+            />
+          );
+        })}
       </Row>
       <ButtonWrapper>
         <ReplayButton text="TOPに戻る" onClick={props.onClickTop} />

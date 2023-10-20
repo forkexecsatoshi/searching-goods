@@ -1,11 +1,11 @@
 import { memo } from "react";
 import styled from "styled-components";
-import { QuestionType } from "../asset/type";
+import { QuestionType, QuestionAnswer } from "../asset/type";
 import QuestionButton from "./button/QuestionButton";
 import Wave from "react-wavify";
 
 interface QAProps {
-  onClick: (choice: string, title: string) => void;
+  onClick: (choice: QuestionAnswer, title: string) => void;
   currentQuestion: QuestionType;
 }
 
@@ -21,7 +21,7 @@ const QA = memo((props: QAProps) => {
           return (
             <QuestionButton
               key={`item_${index}`}
-              text={choice}
+              text={choice.text}
               onClick={() =>
                 props.onClick(choice, props.currentQuestion[0]["answer"])
               }

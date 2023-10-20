@@ -6,15 +6,8 @@ import colors from "./asset/theme";
 import Start from "./component/pages/Start";
 import Question from "./component/pages/Question";
 import Finish from "./component/pages/Finish";
-import {
-  questions,
-  bitQuestions,
-  machineQuestions,
-  dustCollectorQuestions,
-  lightQuestions,
-  diamondFileQuestions,
-} from "./asset/question";
-import { QuestionType } from "./asset/type";
+import { questions } from "./asset/question";
+import { QuestionType, QuestionAnswer, Result } from "./asset/type";
 
 const App = () => {
   // 回答済みの選択肢を格納する
@@ -27,11 +20,9 @@ const App = () => {
   // アンケート終了かどうか
   const [currentStage, setCurrentStage] = useState<Stage>("top");
   // 現在の質問
-  const [currentQuestion, setCurrentQuestion] = useState<QuestionType>(
-    questions[0]
-  );
-  // 質問の配列
-  const [questionArray, setQuestionArray] = useState<QuestionType[]>(questions);
+  const [currentQuestion, setCurrentQuestion] = useState<any>(questions[0]);
+  // 診断結果
+  const [result, setResult] = useState<Result>([]);
 
   // 診断をスタートするボタンをクリックした時の関数
   const onClickStart = () => {
@@ -44,74 +35,49 @@ const App = () => {
     setPreviousQuestionTitle("");
     setCurrentQuestionTitle("");
     setCurrentQuestion(questions[0]);
-    setQuestionArray(questions);
     setCurrentStage(nextStage);
   };
 
   // 選択肢をクリックした時の関数
-  const onClickChoice = (choice: string, title: string) => {
-    switch (choice) {
-      case "ビットを選ぶ":
-        setCurrentQuestion(bitQuestions[0]);
-        setQuestionArray(bitQuestions);
-        setPreviousQuestionTitle(title);
-        break;
-      case "マシンを選ぶ":
-        setCurrentQuestion(machineQuestions[0]);
-        setQuestionArray(machineQuestions);
-        setPreviousQuestionTitle(title);
-        break;
-      case "集塵機を選ぶ":
-        setCurrentQuestion(dustCollectorQuestions[0]);
-        setQuestionArray(dustCollectorQuestions);
-        setPreviousQuestionTitle(title);
-        break;
-      case "ライトを選ぶ":
-        setCurrentQuestion(lightQuestions[0]);
-        setQuestionArray(lightQuestions);
-        setPreviousQuestionTitle(title);
-        break;
-      case "ダイヤモンドファイルを選ぶ":
-        setCurrentQuestion(diamondFileQuestions[0]);
-        setQuestionArray(diamondFileQuestions);
-        setPreviousQuestionTitle(title);
-        break;
-      default:
-        const nextQuestion = questionArray.filter(
-          (question) => question[0].answer === choice
-        );
-        if (nextQuestion.length === 0) {
-          setCurrentStage("finish");
-        } else {
-          setCurrentQuestion(nextQuestion[0]);
-        }
-        // 前回回答した回答を更新
-        setPreviousQuestionTitle(currentQuestionTitle);
+  const onClickChoice = (choice: QuestionAnswer, title: string) => {
+    if (choice.next.length === 0) {
+      setCurrentStage("finish");
+      setResult(choice.answer as Result);
+    } else {
+      setCurrentQuestion(choice.next);
+      setPreviousQuestionTitle(title);
     }
     // 回答済みの選択肢に現在選択した項目を追加
-    setAnsweredQuestion((prev) => [...prev, choice]);
+    setAnsweredQuestion((prev) => [...prev, choice.text]);
     // 次の設問に移動する
-    setCurrentQuestionTitle(title);
+    setCurrentQuestionTitle(choice.text);
   };
 
   // 前へ戻るをクリック時の関数
   const onClickPrevious = () => {
-    // 現在 === 前回の場合は最初の質問のため
-    if (currentQuestionTitle === previousQuestionTitle) {
+    // undefinedになるのは最初の質問のため
+    if (previousQuestionTitle === undefined) {
       onClickRetry("question");
       return;
     }
-    const nextQuestion = questionArray.filter(
-      (question) => question[0].answer === currentQuestionTitle
-    );
-    if (nextQuestion.length === 0) {
-      setCurrentQuestion(questions[0]);
-      setQuestionArray(questions);
-    } else {
-      setCurrentQuestion(nextQuestion[0]);
+    let question = questions[0] as QuestionType;
+    // 回答を1つ前の選択肢まで1つ1つ深ぼっていく
+    for (let i = 0; i < answeredQuestion.length - 1; i++) {
+      question[1].forEach((choice) => {
+        if (choice.text === answeredQuestion[i]) {
+          question = choice.next as QuestionType;
+        }
+      });
     }
-    setCurrentQuestionTitle(previousQuestionTitle);
-    setAnsweredQuestion((prev) => [prev.pop()!]);
+    // 1つ前の問題をセット
+    setCurrentQuestion(question);
+    // 現在と前回の問題文のタイトルを更新する
+    setCurrentQuestionTitle(answeredQuestion[answeredQuestion.length - 2]);
+    setPreviousQuestionTitle(answeredQuestion[answeredQuestion.length - 3]);
+    setAnsweredQuestion((prev) => {
+      prev.pop()!;
+      return prev;
+    });
   };
 
   const stageDom = {
@@ -130,6 +96,7 @@ const App = () => {
         answeredQuestion={answeredQuestion}
         onClickTop={() => onClickRetry("top")}
         onClickRetry={() => onClickRetry("question")}
+        result={result}
       />
     ),
   };
@@ -154,5 +121,7 @@ const RootContainer = styled(Container)<{ stage: Stage }>`
     stage === "finish" &&
     css`
       background: ${colors.primaryBg};
+      height: auto;
+      padding: 30px 0;
     `};
 `;

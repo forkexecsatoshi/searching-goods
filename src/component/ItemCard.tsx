@@ -10,28 +10,16 @@ interface ItemCardProps {
 
 const ItemCard = memo((props: ItemCardProps) => {
   return (
-    <Col sm={4}>
-      <BorderContainer>
-        <Container>
-          <Img src={props.imgUrl} alt={props.title} />
-          <Title>{props.title}</Title>
-        </Container>
-      </BorderContainer>
+    <Col xs={12} sm={6} md={4}>
+      <Container>
+        <Img src={props.imgUrl} alt={props.title} />
+        <Title>{props.title}</Title>
+      </Container>
     </Col>
   );
 });
 
 export default ItemCard;
-
-const BorderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 206px;
-  height: 280px;
-  background: ${colors.primary};
-  border-radius: 12px;
-`;
 
 const Container = styled.div`
   background-color: ${colors.white};
@@ -42,9 +30,11 @@ const Container = styled.div`
   gap: 8px;
   padding-bottom: 20px;
   border-radius: 12px;
+  border: solid 2px ${colors.blue};
   position: relative;
-  width: 200px;
+  width: 100%;
   overflow: hidden;
+  margin-bottom: 20px;
 `;
 
 const Img = styled.img`
@@ -54,6 +44,8 @@ const Img = styled.img`
 
 const Title = styled.p`
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 0;
+  height: 60px;
+  text-align: center;
 `;

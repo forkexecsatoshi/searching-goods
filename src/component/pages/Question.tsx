@@ -1,22 +1,22 @@
 import { memo } from "react";
 import { CSSObject } from "styled-components";
-import { questions } from "../../asset/question";
 import ReplayButton from "../button/ReplayButton";
 import PreviousButton from "../button/PreviousButton";
+import { QuestionType, QuestionAnswer } from "../../asset/type";
 import QA from "../QA";
-import { Choice } from "../../asset/type";
 
 interface QuestionProps {
-  currentQuestionNum: number;
+  currentQuestionTitle: string;
   onClickReplay: () => void;
-  onClickChoice: (choice: Choice) => void;
+  onClickChoice: (choice: QuestionAnswer, title: string) => void;
   onClickPrevious: () => void;
+  currentQuestion: QuestionType;
 }
 
 const Question = memo((props: QuestionProps) => {
   return (
     <>
-      {props.currentQuestionNum !== 0 && (
+      {props.currentQuestionTitle !== "" && (
         <ReplayButton
           text="診断をやり直す"
           onClick={props.onClickReplay}
@@ -24,11 +24,10 @@ const Question = memo((props: QuestionProps) => {
         />
       )}
       <QA
-        currentQuestion={props.currentQuestionNum}
-        question={questions[props.currentQuestionNum]}
         onClick={props.onClickChoice}
+        currentQuestion={props.currentQuestion}
       />
-      {props.currentQuestionNum !== 0 && (
+      {props.currentQuestionTitle !== "" && (
         <PreviousButton
           text="前の質問に戻る"
           onClick={props.onClickPrevious}

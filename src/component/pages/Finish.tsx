@@ -1,15 +1,16 @@
 import { memo } from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
-import { Choice } from "../../asset/type";
 import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
+import { Result } from "../../asset/type";
 
 interface FinishProps {
-  answeredQuestion: Choice[];
+  answeredQuestion: string[];
   onClickTop: () => void;
   onClickRetry: () => void;
+  result: Result;
 }
 
 const Finish = memo((props: FinishProps) => {
@@ -17,9 +18,15 @@ const Finish = memo((props: FinishProps) => {
     <Container>
       <Title>あなたにおすすめのアイテムは...</Title>
       <Row>
-        <ItemCard title="UVライト" imgUrl="uv.png" />
-        <ItemCard title="UVライト" imgUrl="uv.png" />
-        <ItemCard title="UVライト" imgUrl="uv.png" />
+        {props.result.map((item, index) => {
+          return (
+            <ItemCard
+              title={item.text}
+              imgUrl={item.img}
+              key={`item_${index}`}
+            />
+          );
+        })}
       </Row>
       <ButtonWrapper>
         <ReplayButton text="TOPに戻る" onClick={props.onClickTop} />

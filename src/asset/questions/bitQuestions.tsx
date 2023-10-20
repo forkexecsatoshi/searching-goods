@@ -1,26 +1,6 @@
-import { QuestionType } from "./type";
+import { QuestionType } from "../type";
 
-// // question template
-// [
-//   { title: "ソフトジェル", answer: "ソフトジェル" },
-//   [
-//     { text: "選択肢", next: [] },
-//     { text: "選択肢", next: [] },
-//     { text: "選択肢", next: [] },
-//     { text: "選択肢", next: [] },
-//   ],
-// ];
-
-// // answer template
-// [
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-// ];
-
-export const bitQuestions: QuestionType = [
+const bitQuestions: QuestionType = [
   { title: "ビットを選ぶ", answer: "ビットを選ぶ" },
   [
     {
@@ -65,19 +45,19 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "ブラックビットラージXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ブラックビットラージXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -87,19 +67,19 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "ブラックビットスモールXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ブラックビットスモールXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -120,11 +100,11 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットラージバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -134,11 +114,11 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットスモールバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -149,10 +129,13 @@ export const bitQuestions: QuestionType = [
                                     text: "オーバル",
                                     next: [],
                                     answer: [
-                                      { text: "スモールバレル", img: "" },
+                                      {
+                                        text: "スモールバレル",
+                                        img: "top-right-bg.svg",
+                                      },
                                       {
                                         text: "オーロラビットスモールオーバルXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -160,8 +143,14 @@ export const bitQuestions: QuestionType = [
                                     text: "テーパー",
                                     next: [],
                                     answer: [
-                                      { text: "テーパーラウンド M", img: "" },
-                                      { text: "テーパートップXC", img: "" },
+                                      {
+                                        text: "テーパーラウンド M",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "テーパートップXC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                 ],
@@ -179,10 +168,22 @@ export const bitQuestions: QuestionType = [
                                     text: "ラージバレル",
                                     next: [],
                                     answer: [
-                                      { text: "ブラックビットXC", img: "" },
-                                      { text: "ブラックビットC", img: "" },
-                                      { text: "オーロラビットXC", img: "" },
-                                      { text: "オーロラビットC", img: "" },
+                                      {
+                                        text: "ブラックビットXC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "ブラックビットC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "オーロラビットXC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "オーロラビットC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                   {
@@ -191,19 +192,19 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "ブラックビットスモールXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ブラックビットスモールC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -211,9 +212,18 @@ export const bitQuestions: QuestionType = [
                                     text: "テーパー",
                                     next: [],
                                     answer: [
-                                      { text: "テーパーラウンド C", img: "" },
-                                      { text: "テーパートップXC", img: "" },
-                                      { text: "テーパートップC", img: "" },
+                                      {
+                                        text: "テーパーラウンド C",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "テーパートップXC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "テーパートップC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                 ],
@@ -231,10 +241,22 @@ export const bitQuestions: QuestionType = [
                                     text: "ラージバレル",
                                     next: [],
                                     answer: [
-                                      { text: "ブラックビットXC", img: "" },
-                                      { text: "ブラックビットC", img: "" },
-                                      { text: "オーロラビットXC", img: "" },
-                                      { text: "オーロラビットC", img: "" },
+                                      {
+                                        text: "ブラックビットXC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "ブラックビットC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "オーロラビットXC",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "オーロラビットC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                   {
@@ -243,19 +265,19 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "ブラックビットスモールXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ブラックビットスモールC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -265,11 +287,11 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "オーロラビットスムーストップXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスムーストップC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -279,11 +301,11 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "オーロラビットスモールスムーストップXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールスムーストップC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -296,23 +318,23 @@ export const bitQuestions: QuestionType = [
                               answer: [
                                 {
                                   text: "オーロラビットラージスムーストップC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "オーロラビットラージスムーストップM",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "オーロラビットスモールスムーストップC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "オーロラビットスモールスムーストップM",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "テーパーラウンドM",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                               ],
                             },
@@ -346,27 +368,27 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットラージXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットラージXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ゴールドビットラージXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ゴールドビットラージXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "シルバービットラージXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "シルバービットラージXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -376,27 +398,27 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットスモールXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットスモールXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ゴールドビットスモールXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "ゴールドビットスモールXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "シルバービットスモールXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "シルバービットスモールXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -417,11 +439,11 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットラージバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -431,11 +453,11 @@ export const bitQuestions: QuestionType = [
                                           answer: [
                                             {
                                               text: "オーロラビットスモールバレルXXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
-                                              img: "",
+                                              img: "top-right-bg.svg",
                                             },
                                           ],
                                         },
@@ -448,11 +470,11 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "オーロラビットスモールオーバルXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールオーバルC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -460,8 +482,14 @@ export const bitQuestions: QuestionType = [
                                     text: "テーパー",
                                     next: [],
                                     answer: [
-                                      { text: "テーパーラウンド M", img: "" },
-                                      { text: "テーパートップC", img: "" },
+                                      {
+                                        text: "テーパーラウンド M",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "テーパートップC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                 ],
@@ -481,51 +509,51 @@ export const bitQuestions: QuestionType = [
                                     answer: [
                                       {
                                         text: "オーロラビットラージXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットラージC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ゴールドビットラージXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ゴールドビットラージC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "シルバービットラージXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "シルバービットラージC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "オーロラビットスモールC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ゴールドビットスモールXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "ゴールドビットスモールC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "シルバービットスモールXC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                       {
                                         text: "シルバービットスモールC",
-                                        img: "",
+                                        img: "top-right-bg.svg",
                                       },
                                     ],
                                   },
@@ -534,8 +562,14 @@ export const bitQuestions: QuestionType = [
                                     text: "テーパー",
                                     next: [],
                                     answer: [
-                                      { text: "テーパーラウンド M", img: "" },
-                                      { text: "テーパートップC", img: "" },
+                                      {
+                                        text: "テーパーラウンド M",
+                                        img: "top-right-bg.svg",
+                                      },
+                                      {
+                                        text: "テーパートップC",
+                                        img: "top-right-bg.svg",
+                                      },
                                     ],
                                   },
                                 ],
@@ -545,20 +579,44 @@ export const bitQuestions: QuestionType = [
                               text: "サロンワーク始めて1年目",
                               next: [],
                               answer: [
-                                { text: "オーロラビットラージC", img: "" },
-                                { text: "オーロラビットラージM", img: "" },
-                                { text: "オーロラビットスモールC", img: "" },
-                                { text: "オーロラビットスモールM", img: "" },
+                                {
+                                  text: "オーロラビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットラージM",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールM",
+                                  img: "top-right-bg.svg",
+                                },
                               ],
                             },
                             {
                               text: "セルフネイラー様駆け出し",
                               next: [],
                               answer: [
-                                { text: "オーロラビットラージC", img: "" },
-                                { text: "オーロラビットラージM", img: "" },
-                                { text: "オーロラビットスモールC", img: "" },
-                                { text: "オーロラビットスモールM", img: "" },
+                                {
+                                  text: "オーロラビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットラージM",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールM",
+                                  img: "top-right-bg.svg",
+                                },
                               ],
                             },
                           ],
@@ -573,15 +631,21 @@ export const bitQuestions: QuestionType = [
                               text: "サロンで時短・上級者プロ向け",
                               next: [],
                               answer: [
-                                { text: "ブラックビットラージXXC", img: "" },
-                                { text: "ブラックビットラージXC", img: "" },
+                                {
+                                  text: "ブラックビットラージXXC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "ブラックビットラージXC",
+                                  img: "top-right-bg.svg",
+                                },
                                 {
                                   text: "ブラックビットスモールXXC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "ブラックビットスモールXC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                               ],
                             },
@@ -589,15 +653,21 @@ export const bitQuestions: QuestionType = [
                               text: "ゆっくり丁寧に・中級者向け",
                               next: [],
                               answer: [
-                                { text: "ブラックビットラージXC", img: "" },
-                                { text: "ブラックビットラージC", img: "" },
+                                {
+                                  text: "ブラックビットラージXC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "ブラックビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
                                 {
                                   text: "ブラックビットスモールXC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "ブラックビットスモールC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                               ],
                             },
@@ -605,15 +675,21 @@ export const bitQuestions: QuestionType = [
                               text: "サロンワーク始めて1年目",
                               next: [],
                               answer: [
-                                { text: "ブラックビットラージXC", img: "" },
-                                { text: "ブラックビットラージC", img: "" },
+                                {
+                                  text: "ブラックビットラージXC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "ブラックビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
                                 {
                                   text: "ブラックビットスモールXC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                                 {
                                   text: "ブラックビットスモールC",
-                                  img: "",
+                                  img: "top-right-bg.svg",
                                 },
                               ],
                             },
@@ -640,23 +716,56 @@ export const bitQuestions: QuestionType = [
                               text: "アクリル・ハードジェル",
                               next: [],
                               answer: [
-                                { text: "ブラックビットラージC", img: "" },
-                                { text: "ブラックビットラージM", img: "" },
-                                { text: "ブラックビットスモールC", img: "" },
-                                { text: "オーロラビットラージC", img: "" },
-                                { text: "オーロラビットラージM", img: "" },
-                                { text: "オーロラビットスモールC", img: "" },
-                                { text: "オーロラビットスモールM", img: "" },
+                                {
+                                  text: "ブラックビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "ブラックビットラージM",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "ブラックビットスモールC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットラージM",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールM",
+                                  img: "top-right-bg.svg",
+                                },
                               ],
                             },
                             {
                               text: "ソフトジェル",
                               next: [],
                               answer: [
-                                { text: "オーロラビットラージC", img: "" },
-                                { text: "オーロラビットラージM", img: "" },
-                                { text: "オーロラビットスモールC", img: "" },
-                                { text: "オーロラビットスモールM", img: "" },
+                                {
+                                  text: "オーロラビットラージC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットラージM",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールC",
+                                  img: "top-right-bg.svg",
+                                },
+                                {
+                                  text: "オーロラビットスモールM",
+                                  img: "top-right-bg.svg",
+                                },
                               ],
                             },
                           ],
@@ -666,13 +775,19 @@ export const bitQuestions: QuestionType = [
                         text: "リフト直し・仕上げ、段差取り",
                         next: [],
                         answer: [
-                          { text: "オーロラビット コーンＦ", img: "" },
-                          { text: "テーパーラウンド F", img: "" },
-                          { text: "スモールコーン", img: "" },
-                          { text: "セラマルチフィル", img: "" },
+                          {
+                            text: "オーロラビット コーンＦ",
+                            img: "top-right-bg.svg",
+                          },
+                          {
+                            text: "テーパーラウンド F",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "スモールコーン", img: "top-right-bg.svg" },
+                          { text: "セラマルチフィル", img: "top-right-bg.svg" },
                           {
                             text: "シルバービットスモールスムーストップ F",
-                            img: "",
+                            img: "top-right-bg.svg",
                           },
                         ],
                       },
@@ -691,18 +806,24 @@ export const bitQuestions: QuestionType = [
                         text: "先端丸型で安心安全",
                         next: [],
                         answer: [
-                          { text: "トリプルフィル", img: "" },
-                          { text: "コンビネーションコーン", img: "" },
-                          { text: "フィルインデュオ", img: "" },
+                          { text: "トリプルフィル", img: "top-right-bg.svg" },
+                          {
+                            text: "コンビネーションコーン",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "フィルインデュオ", img: "top-right-bg.svg" },
                         ],
                       },
                       {
                         text: "先端平らで際まで攻める",
                         next: [],
                         answer: [
-                          { text: "FUJIビット", img: "" },
-                          { text: "コンビネーションテーパー", img: "" },
-                          { text: "クロステーパー", img: "" },
+                          { text: "FUJIビット", img: "top-right-bg.svg" },
+                          {
+                            text: "コンビネーションテーパー",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "クロステーパー", img: "top-right-bg.svg" },
                         ],
                       },
                     ],
@@ -731,16 +852,22 @@ export const bitQuestions: QuestionType = [
                         text: "キューティクルのプッシュアップ",
                         next: [],
                         answer: [
-                          { text: "スモールテーパー", img: "" },
-                          { text: "ミニポイント", img: "" },
-                          { text: "グリーンポイント", img: "" },
-                          { text: "ベビーテーパー", img: "" },
-                          { text: "ベビーポイント", img: "" },
-                          { text: "スリムゴールドダイヤ", img: "" },
-                          { text: "キューティクルケア", img: "" },
+                          { text: "スモールテーパー", img: "top-right-bg.svg" },
+                          { text: "ミニポイント", img: "top-right-bg.svg" },
+                          { text: "グリーンポイント", img: "top-right-bg.svg" },
+                          { text: "ベビーテーパー", img: "top-right-bg.svg" },
+                          { text: "ベビーポイント", img: "top-right-bg.svg" },
+                          {
+                            text: "スリムゴールドダイヤ",
+                            img: "top-right-bg.svg",
+                          },
+                          {
+                            text: "キューティクルケア",
+                            img: "top-right-bg.svg",
+                          },
                           {
                             text: "オーロラダイヤモンドショートコーン",
-                            img: "",
+                            img: "top-right-bg.svg",
                           },
                         ],
                       },
@@ -748,21 +875,36 @@ export const bitQuestions: QuestionType = [
                         text: "ポケット・コーナー施術",
                         next: [],
                         answer: [
-                          { text: "ゴールドダイヤ ニードル", img: "" },
-                          { text: "リムーバルスティック", img: "" },
-                          { text: "オニクリーン", img: "" },
-                          { text: "ライスポイント", img: "" },
-                          { text: "アンダークリーナー", img: "" },
+                          {
+                            text: "ゴールドダイヤ ニードル",
+                            img: "top-right-bg.svg",
+                          },
+                          {
+                            text: "リムーバルスティック",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "オニクリーン", img: "top-right-bg.svg" },
+                          { text: "ライスポイント", img: "top-right-bg.svg" },
+                          {
+                            text: "アンダークリーナー",
+                            img: "top-right-bg.svg",
+                          },
                         ],
                       },
                       {
                         text: "ルースキューティクルの除去",
                         next: [],
                         answer: [
-                          { text: "ボーラー", img: "" },
-                          { text: "キューティクルニッパー", img: "" },
-                          { text: "ライスポイント", img: "" },
-                          { text: "アンダークリーナー", img: "" },
+                          { text: "ボーラー", img: "top-right-bg.svg" },
+                          {
+                            text: "キューティクルニッパー",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "ライスポイント", img: "top-right-bg.svg" },
+                          {
+                            text: "アンダークリーナー",
+                            img: "top-right-bg.svg",
+                          },
                         ],
                       },
                     ],
@@ -777,24 +919,36 @@ export const bitQuestions: QuestionType = [
                         text: "広い範囲",
                         next: [],
                         answer: [
-                          { text: "スキンスムーサー", img: "" },
-                          { text: "オーロラスキンケア", img: "" },
-                          { text: "スリムゴールドダイヤ", img: "" },
-                          { text: "スキンクリーナー", img: "" },
-                          { text: "ダイヤモンドテーパー", img: "" },
-                          { text: "ピンクポイント", img: "" },
-                          { text: "グリーンポイント", img: "" },
-                          { text: "ゴールドダイヤ ニードル", img: "" },
-                          { text: "サイドコーナー", img: "" },
+                          { text: "スキンスムーサー", img: "top-right-bg.svg" },
+                          {
+                            text: "オーロラスキンケア",
+                            img: "top-right-bg.svg",
+                          },
+                          {
+                            text: "スリムゴールドダイヤ",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "スキンクリーナー", img: "top-right-bg.svg" },
+                          {
+                            text: "ダイヤモンドテーパー",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "ピンクポイント", img: "top-right-bg.svg" },
+                          { text: "グリーンポイント", img: "top-right-bg.svg" },
+                          {
+                            text: "ゴールドダイヤ ニードル",
+                            img: "top-right-bg.svg",
+                          },
+                          { text: "サイドコーナー", img: "top-right-bg.svg" },
                         ],
                       },
                       {
                         text: "狭い範囲",
                         next: [],
                         answer: [
-                          { text: "ソフティ", img: "" },
-                          { text: "ボーラー C", img: "" },
-                          { text: "ミニポイント", img: "" },
+                          { text: "ソフティ", img: "top-right-bg.svg" },
+                          { text: "ボーラー C", img: "top-right-bg.svg" },
+                          { text: "ミニポイント", img: "top-right-bg.svg" },
                         ],
                       },
                     ],
@@ -804,11 +958,14 @@ export const bitQuestions: QuestionType = [
                   text: "サンディング",
                   next: [],
                   answer: [
-                    { text: "サンディングバンド", img: "" },
-                    { text: "ブロンズダイヤモンドスリムパレル", img: "" },
-                    { text: "ダイヤモンドテーパー", img: "" },
-                    { text: "ラージバレル", img: "" },
-                    { text: "スモールバレル", img: "" },
+                    { text: "サンディングバンド", img: "top-right-bg.svg" },
+                    {
+                      text: "ブロンズダイヤモンドスリムパレル",
+                      img: "top-right-bg.svg",
+                    },
+                    { text: "ダイヤモンドテーパー", img: "top-right-bg.svg" },
+                    { text: "ラージバレル", img: "top-right-bg.svg" },
+                    { text: "スモールバレル", img: "top-right-bg.svg" },
                   ],
                 },
               ],
@@ -818,9 +975,9 @@ export const bitQuestions: QuestionType = [
             text: "ストーンオフ",
             next: [],
             answer: [
-              { text: "ストーンリムーバー", img: "" },
-              { text: "ストーンオフ", img: "" },
-              { text: "ベビーコーン", img: "" },
+              { text: "ストーンリムーバー", img: "top-right-bg.svg" },
+              { text: "ストーンオフ", img: "top-right-bg.svg" },
+              { text: "ベビーコーン", img: "top-right-bg.svg" },
             ],
           },
         ],
@@ -830,37 +987,4 @@ export const bitQuestions: QuestionType = [
   ],
 ];
 
-export const machineQuestions = [
-  [{ title: "マシンを選ぶ", answer: "machine" }, ["ハンド施術", "フット施術"]],
-];
-
-export const dustCollectorQuestions = [
-  [
-    { title: "集塵機を選ぶ", answer: "dustCollector" },
-    ["ハンド施術", "フット施術"],
-  ],
-];
-
-export const lightQuestions = [
-  [{ title: "ライトを選ぶ", answer: "light" }, ["ハンド施術", "フット施術"]],
-];
-
-export const diamondFileQuestions = [
-  [
-    { title: "ダイヤモンドファイルを選ぶ", answer: "diamondFile" },
-    ["ハンド施術", "フット施術"],
-  ],
-];
-
-export const questions: QuestionType[] = [
-  [
-    { title: "何をお探しですか？", answer: "first" },
-    [
-      { text: "ビットを選ぶ", next: bitQuestions },
-      // { text: "マシンを選ぶ", next: machineQuestions },
-      // { text: "集塵機を選ぶ", next: dustCollectorQuestions },
-      // { text: "ライトを選ぶ", next: lightQuestions },
-      // { text: "ダイヤモンドファイルを選ぶ", next: diamondFileQuestions },
-    ],
-  ],
-];
+export default bitQuestions;

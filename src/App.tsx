@@ -6,7 +6,7 @@ import colors from "./asset/theme";
 import Start from "./component/pages/Start";
 import Question from "./component/pages/Question";
 import Finish from "./component/pages/Finish";
-import { questions } from "./asset/question";
+import { questions } from "./asset/questions/question";
 import { QuestionType, QuestionAnswer, Result } from "./asset/type";
 
 const App = () => {

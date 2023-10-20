@@ -12,7 +12,11 @@ const ItemCard = memo((props: ItemCardProps) => {
   return (
     <Col xs={12} sm={6} md={4}>
       <Container>
-        <Img src={props.imgUrl} alt={props.title} />
+        <Img
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/img/${props.imgUrl})`,
+          }}
+        />
         <Title>{props.title}</Title>
       </Container>
     </Col>
@@ -37,9 +41,12 @@ const Container = styled.div`
   margin-bottom: 20px;
 `;
 
-const Img = styled.img`
+const Img = styled.div`
   width: 100%;
   height: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 const Title = styled.p`

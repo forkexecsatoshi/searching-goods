@@ -8,6 +8,7 @@
 ├── decision_AI: 前作ってた html ベースのファイル達  
 ├── node_modules: package.json を元にインストールしたライブラリ達  
 ├── public  
+│ ├── img: 診断結果の img の格納場所  
 │ ├── index.html: 最終的にここにレンダリングされている  
 │ ├── manifest.json: Web アプリケーションやブラウザ拡張機能の開発に使用される JSON ファイル  
 │ └── robots.txt: 検索エンジンのクローラに対して、サイトのどの URL にアクセスしてよいかを伝えるもの  

@@ -5,6 +5,7 @@ import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
 import { Result } from "../../asset/type";
+import png from "../../asset/top-left-bg.svg";
 
 interface FinishProps {
   answeredQuestion: string[];

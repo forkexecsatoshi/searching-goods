@@ -950,7 +950,185 @@ const bitQuestions: QuestionType = [
         ],
       ],
     },
-    { text: "フット施術", next: [] },
+    {
+      text: "フット施術",
+      next: [
+        { title: "フット施術", answer: "フット施術" },
+        [
+          {
+            text: "フットケア",
+            next: [
+              { title: "フットケア", answer: "フットケア" },
+              [
+                {
+                  text: "角質除去・スキンケア",
+                  next: [
+                    {
+                      title: "角質除去・スキンケア",
+                      answer: "角質除去・スキンケア",
+                    },
+                    [
+                      {
+                        text: "広い範囲",
+                        next: [
+                          { title: "広い範囲", answer: "広い範囲" },
+                          [
+                            {
+                              text: "粗削り",
+                              next: [],
+                              answer: [
+                                { text: "円盤ビット", img: "" },
+                                { text: "ビッグバレル", img: "" },
+                                { text: "サンディングキャップ", img: "" },
+                                { text: "ダイヤ円盤ビット", img: "" },
+                                { text: "メガコーン", img: "" },
+                                { text: "バルーン", img: "" },
+                              ],
+                            },
+                            {
+                              text: "仕上げ",
+                              next: [],
+                              answer: [
+                                { text: "シリコンポイント", img: "" },
+                                { text: "つるピカセット", img: "" },
+                              ],
+                            },
+                          ],
+                        ],
+                      },
+                      {
+                        text: "狭い範囲",
+                        next: [
+                          { title: "狭い範囲", answer: "狭い範囲" },
+                          [
+                            {
+                              text: "粗削り",
+                              next: [],
+                              answer: [
+                                { text: "円盤ビット", img: "" },
+                                { text: "バルーン", img: "" },
+                              ],
+                            },
+                            {
+                              text: "仕上げ",
+                              next: [],
+                              answer: [],
+                            },
+                          ],
+                        ],
+                      },
+                    ],
+                  ],
+                },
+                {
+                  text: "ペディケア",
+                  next: [
+                    { title: "ペディケア", answer: "ペディケア" },
+                    [
+                      {
+                        text: "キューティクル",
+                        next: [],
+                        answer: [
+                          { text: "オニクリーン", img: "" },
+                          { text: "リムーバルスティック", img: "" },
+                          { text: "ベビースキンクリーナー", img: "" },
+                          { text: "再度クリーン", img: "" },
+                          { text: "ミニポイント", img: "" },
+                        ],
+                      },
+                      {
+                        text: "プッシュアップ",
+                        next: [],
+                        answer: [{ text: "ミニポイント", img: "" }],
+                      },
+                    ],
+                  ],
+                },
+                {
+                  text: "タコ",
+                  next: [
+                    { title: "タコ", answer: "タコ" },
+                    [
+                      {
+                        text: "粗削り",
+                        next: [],
+                        answer: [
+                          { text: "ダイヤモンドメガ", img: "" },
+                          { text: "円盤ビット", img: "" },
+                          { text: "ビッグバレル", img: "" },
+                          { text: "ボーラー", img: "" },
+                        ],
+                      },
+                      {
+                        text: "仕上げ",
+                        next: [],
+                        answer: [{ text: "シリコンポイント", img: "" }],
+                      },
+                    ],
+                  ],
+                },
+              ],
+            ],
+          },
+          {
+            text: "トラブルフット",
+            next: [
+              { title: "トラブルフット", answer: "トラブルフット" },
+              [
+                {
+                  text: "ウオノメ",
+                  next: [
+                    { title: "ウオノメ", answer: "ウオノメ" },
+                    [
+                      {
+                        text: "粗削り",
+                        next: [],
+                        answer: [
+                          { text: "ウオノメビット", img: "" },
+                          { text: "ボーラーフレイザー", img: "" },
+                          { text: "ウオノメセット", img: "" },
+                          { text: "ボーラーフレイザー", img: "" },
+                          { text: "ボーラーフレイザー３本セット", img: "" },
+                        ],
+                      },
+                      {
+                        text: "仕上げ",
+                        next: [],
+                        answer: [
+                          { text: "ダイヤモンドポーラー", img: "" },
+                          { text: "シリコンポイント", img: "" },
+                        ],
+                      },
+                    ],
+                  ],
+                },
+                {
+                  text: "巻き爪",
+                  next: [],
+                  answer: [
+                    { text: "スリムポイント", img: "" },
+                    { text: "プレパレーター", img: "" },
+                    { text: "ニードル", img: "" },
+                    { text: "トップグリップ", img: "" },
+                    { text: "ソフティ", img: "" },
+                  ],
+                },
+                {
+                  text: "肥厚爪",
+                  next: [],
+                  answer: [
+                    { text: "セラマルチフィル", img: "" },
+                    { text: "マルチスピンドル", img: "" },
+                    { text: "スモールテーパー", img: "" },
+                    { text: "スリムオーバル", img: "" },
+                  ],
+                },
+              ],
+            ],
+          },
+        ],
+      ],
+    },
   ],
 ];
 

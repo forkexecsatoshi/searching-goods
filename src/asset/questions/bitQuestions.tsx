@@ -46,18 +46,22 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "ブラックビットラージXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ブラックビットラージXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -68,18 +72,22 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "ブラックビットスモールXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ブラックビットスモールXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -101,10 +109,12 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットラージバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -115,10 +125,12 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットスモールバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -132,10 +144,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "スモールバレル",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールオーバルXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -146,10 +160,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "テーパーラウンド M",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "テーパートップXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -171,18 +187,22 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "ブラックビットXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ブラックビットC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -193,18 +213,22 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "ブラックビットスモールXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ブラックビットスモールC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -215,14 +239,17 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "テーパーラウンド C",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "テーパートップXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "テーパートップC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -244,18 +271,22 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "ブラックビットXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ブラックビットC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -266,18 +297,22 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "ブラックビットスモールXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ブラックビットスモールC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールバレルC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -288,10 +323,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "オーロラビットスムーストップXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスムーストップC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -302,10 +339,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "オーロラビットスモールスムーストップXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールスムーストップC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -319,22 +358,27 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "オーロラビットラージスムーストップC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージスムーストップM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールスムーストップC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールスムーストップM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "テーパーラウンドM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -369,26 +413,32 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットラージXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットラージXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ゴールドビットラージXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ゴールドビットラージXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "シルバービットラージXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "シルバービットラージXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -399,26 +449,32 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットスモールXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットスモールXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ゴールドビットスモールXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "ゴールドビットスモールXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "シルバービットスモールXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "シルバービットスモールXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -440,10 +496,12 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットラージバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットラージバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -454,10 +512,12 @@ const bitQuestions: QuestionType = [
                                             {
                                               text: "オーロラビットスモールバレルXXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                             {
                                               text: "オーロラビットスモールバレルXC",
                                               img: "sample.png",
+                                              url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                             },
                                           ],
                                         },
@@ -471,10 +531,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "オーロラビットスモールオーバルXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールオーバルC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -485,10 +547,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "テーパーラウンド M",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "テーパートップC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -510,50 +574,62 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "オーロラビットラージXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットラージC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ゴールドビットラージXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ゴールドビットラージC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "シルバービットラージXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "シルバービットラージC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "オーロラビットスモールC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ゴールドビットスモールXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "ゴールドビットスモールC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "シルバービットスモールXC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "シルバービットスモールC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -565,10 +641,12 @@ const bitQuestions: QuestionType = [
                                       {
                                         text: "テーパーラウンド M",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                       {
                                         text: "テーパートップC",
                                         img: "sample.png",
+                                        url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                       },
                                     ],
                                   },
@@ -582,18 +660,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "オーロラビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -604,18 +686,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "オーロラビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -634,18 +720,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "ブラックビットラージXXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットラージXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールXXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -656,18 +746,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "ブラックビットラージXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -678,18 +772,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "ブラックビットラージXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールXC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -719,30 +817,37 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "ブラックビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットラージM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "ブラックビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -753,18 +858,22 @@ const bitQuestions: QuestionType = [
                                 {
                                   text: "オーロラビットラージC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットラージM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールC",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                                 {
                                   text: "オーロラビットスモールM",
                                   img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                                 },
                               ],
                             },
@@ -778,13 +887,27 @@ const bitQuestions: QuestionType = [
                           {
                             text: "オーロラビット コーンＦ",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "テーパーラウンド F", img: "sample.png" },
-                          { text: "スモールコーン", img: "sample.png" },
-                          { text: "セラマルチフィル", img: "sample.png" },
+                          {
+                            text: "テーパーラウンド F",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "スモールコーン",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "セラマルチフィル",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "シルバービットスモールスムーストップ F",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
                         ],
                       },
@@ -803,21 +926,38 @@ const bitQuestions: QuestionType = [
                         text: "先端丸型で安心安全",
                         next: [],
                         answer: [
-                          { text: "トリプルフィル", img: "sample.png" },
-                          { text: "コンビネーションコーン", img: "sample.png" },
-                          { text: "フィルインデュオ", img: "sample.png" },
+                          {
+                            text: "トリプルフィル",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "コンビネーションコーン",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "フィルインデュオ",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "先端平らで際まで攻める",
                         next: [],
                         answer: [
-                          { text: "FUJIビット", img: "sample.png" },
+                          { text: "FUJIビット", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
                           {
                             text: "コンビネーションテーパー",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "クロステーパー", img: "sample.png" },
+                          {
+                            text: "クロステーパー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                     ],
@@ -846,16 +986,41 @@ const bitQuestions: QuestionType = [
                         text: "キューティクルのプッシュアップ",
                         next: [],
                         answer: [
-                          { text: "スモールテーパー", img: "sample.png" },
-                          { text: "ミニポイント", img: "sample.png" },
-                          { text: "グリーンポイント", img: "sample.png" },
-                          { text: "ベビーテーパー", img: "sample.png" },
-                          { text: "ベビーポイント", img: "sample.png" },
-                          { text: "スリムゴールドダイヤ", img: "sample.png" },
-                          { text: "キューティクルケア", img: "sample.png" },
+                          {
+                            text: "スモールテーパー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          { text: "ミニポイント", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "グリーンポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ベビーテーパー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ベビーポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "スリムゴールドダイヤ",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "キューティクルケア",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "オーロラダイヤモンドショートコーン",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
                         ],
                       },
@@ -866,21 +1031,46 @@ const bitQuestions: QuestionType = [
                           {
                             text: "ゴールドダイヤ ニードル",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "リムーバルスティック", img: "sample.png" },
-                          { text: "オニクリーン", img: "sample.png" },
-                          { text: "ライスポイント", img: "sample.png" },
-                          { text: "アンダークリーナー", img: "sample.png" },
+                          {
+                            text: "リムーバルスティック",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          { text: "オニクリーン", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "ライスポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "アンダークリーナー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "ルースキューティクルの除去",
                         next: [],
                         answer: [
-                          { text: "ボーラー", img: "sample.png" },
-                          { text: "キューティクルニッパー", img: "sample.png" },
-                          { text: "ライスポイント", img: "sample.png" },
-                          { text: "アンダークリーナー", img: "sample.png" },
+                          { text: "ボーラー", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "キューティクルニッパー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ライスポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "アンダークリーナー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                     ],
@@ -895,27 +1085,60 @@ const bitQuestions: QuestionType = [
                         text: "広い範囲",
                         next: [],
                         answer: [
-                          { text: "スキンスムーサー", img: "sample.png" },
-                          { text: "オーロラスキンケア", img: "sample.png" },
-                          { text: "スリムゴールドダイヤ", img: "sample.png" },
-                          { text: "スキンクリーナー", img: "sample.png" },
-                          { text: "ダイヤモンドテーパー", img: "sample.png" },
-                          { text: "ピンクポイント", img: "sample.png" },
-                          { text: "グリーンポイント", img: "sample.png" },
+                          {
+                            text: "スキンスムーサー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "オーロラスキンケア",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "スリムゴールドダイヤ",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "スキンクリーナー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ダイヤモンドテーパー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ピンクポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "グリーンポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "ゴールドダイヤ ニードル",
                             img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "サイドコーナー", img: "sample.png" },
+                          {
+                            text: "サイドコーナー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "狭い範囲",
                         next: [],
                         answer: [
-                          { text: "ソフティ", img: "sample.png" },
-                          { text: "ボーラー C", img: "sample.png" },
-                          { text: "ミニポイント", img: "sample.png" },
+                          { text: "ソフティ", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          { text: "ボーラー C", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          { text: "ミニポイント", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
                         ],
                       },
                     ],
@@ -925,14 +1148,19 @@ const bitQuestions: QuestionType = [
                   text: "サンディング",
                   next: [],
                   answer: [
-                    { text: "サンディングバンド", img: "sample.png" },
+                    { text: "サンディングバンド", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
                     {
                       text: "ブロンズダイヤモンドスリムパレル",
                       img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                     },
-                    { text: "ダイヤモンドテーパー", img: "sample.png" },
-                    { text: "ラージバレル", img: "sample.png" },
-                    { text: "スモールバレル", img: "sample.png" },
+                    {
+                      text: "ダイヤモンドテーパー",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    { text: "ラージバレル", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                    { text: "スモールバレル", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
                   ],
                 },
               ],
@@ -942,9 +1170,9 @@ const bitQuestions: QuestionType = [
             text: "ストーンオフ",
             next: [],
             answer: [
-              { text: "ストーンリムーバー", img: "sample.png" },
-              { text: "ストーンオフ", img: "sample.png" },
-              { text: "ベビーコーン", img: "sample.png" },
+              { text: "ストーンリムーバー", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+              { text: "ストーンオフ", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+              { text: "ベビーコーン", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
             ],
           },
         ],

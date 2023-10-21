@@ -18,11 +18,11 @@ import diamondFileQuestions from "./diamondFileQuestions";
 
 // // answer template
 // [
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
-//   { text: "", img: "" },
+//   { text: "", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+//   { text: "", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+//   { text: "", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+//   { text: "", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+//   { text: "", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
 // ];
 
 export const questions: QuestionType[] = [

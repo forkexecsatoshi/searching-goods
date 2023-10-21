@@ -2,7 +2,7 @@ type Category = "bit" | "machine" | "dustCollector" | "light" | "diamondFile";
 
 export type Choice = { text: string; value: number | Category };
 
-export type Result = { text: string; img: string }[];
+export type Result = { text: string; img: string, url: string }[];
 
 export type QuestionAnswer = {
   text: string;

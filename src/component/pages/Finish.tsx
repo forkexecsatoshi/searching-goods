@@ -5,7 +5,6 @@ import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
 import { Result } from "../../asset/type";
-import png from "../../asset/top-left-bg.svg";
 
 interface FinishProps {
   answeredQuestion: string[];
@@ -24,6 +23,7 @@ const Finish = memo((props: FinishProps) => {
             <ItemCard
               title={item.text}
               imgUrl={item.img}
+              url={item.url}
               key={`item_${index}`}
             />
           );

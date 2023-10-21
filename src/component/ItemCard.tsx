@@ -6,12 +6,13 @@ import Col from "react-bootstrap/Col";
 interface ItemCardProps {
   title: string;
   imgUrl: string;
+  url: string;
 }
 
 const ItemCard = memo((props: ItemCardProps) => {
   return (
     <Col xs={12} sm={6} md={4}>
-      <Container>
+      <Container target="_blank" href={props.url}>
         <Img
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/img/${props.imgUrl})`,
@@ -25,7 +26,7 @@ const ItemCard = memo((props: ItemCardProps) => {
 
 export default ItemCard;
 
-const Container = styled.div`
+const Container = styled.a`
   background-color: ${colors.white};
   display: flex;
   flex-direction: column;
@@ -39,6 +40,13 @@ const Container = styled.div`
   width: 100%;
   overflow: hidden;
   margin-bottom: 20px;
+  cursor: pointer;
+  color: ${colors.black};
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const Img = styled.div`

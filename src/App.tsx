@@ -64,9 +64,8 @@ const App = () => {
     // 回答を1つ前の選択肢まで1つ1つ深ぼっていく
     for (let i = 0; i < answeredQuestion.length - 1; i++) {
       question[1].forEach((choice) => {
-        if (choice.text === answeredQuestion[i]) {
+        if (choice.text === answeredQuestion[i])
           question = choice.next as QuestionType;
-        }
       });
     }
     // 1つ前の問題をセット
@@ -123,5 +122,10 @@ const RootContainer = styled(Container)<{ stage: Stage }>`
       background: ${colors.primaryBg};
       height: auto;
       padding: 30px 0;
+      min-height: 100vh;
+      align-items: center;
+      > div {
+        width: 80%;
+      }
     `};
 `;

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/searching-goods/static/js/main.352b3bd9.js",
+    "static/js/787.9571319f.chunk.js": "/searching-goods/static/js/787.9571319f.chunk.js",
+    "index.html": "/searching-goods/index.html",
+    "static/media/top-left-bg.svg": "/searching-goods/static/media/top-left-bg.b4bec199f3136f741470eb9f87706d52.svg",
+    "static/media/top-right-bg.svg": "/searching-goods/static/media/top-right-bg.a61d0d3bcb865eab23483754c6a02db6.svg",
+    "main.352b3bd9.js.map": "/searching-goods/static/js/main.352b3bd9.js.map",
+    "787.9571319f.chunk.js.map": "/searching-goods/static/js/787.9571319f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.352b3bd9.js"
+  ]
+}

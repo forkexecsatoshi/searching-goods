@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# 開発環境の準備
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- `npm install`でライブラリのインストール
+- `npm start`で`localhost:3000`を立ち上げる
 
-## Available Scripts
+# ファイル構成
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+├── decision_AI: 前作ってた html ベースのファイル達  
+├── node_modules: package.json を元にインストールしたライブラリ達  
+├── public  
+│ ├── img: 診断結果の img の格納場所  
+│ ├── index.html: 最終的にここにレンダリングされている  
+│ ├── manifest.json: Web アプリケーションやブラウザ拡張機能の開発に使用される JSON ファイル  
+│ └── robots.txt: 検索エンジンのクローラに対して、サイトのどの URL にアクセスしてよいかを伝えるもの  
+├── src  
+│ ├── component: コンポーネント(パーツ)をここに全部置いている  
+│ ├── App.tsx: ここが最終的な index.html の body の中身的なページ  
+│ ├── index.tsx: App を包んでスタイル当てたりしてる tsx の最上位層  
+│ ├── react-add-env.d.ts  
+│ └── reportWebVitals.ts: WebVitals を計測できるらしい  
+├── .gitignore  
+├── package-lock.json: ほぼ package.json と同じ  
+└── package.json: インストールしたパッケージ一覧  
+├── README.md  
+└── tsconfig.json

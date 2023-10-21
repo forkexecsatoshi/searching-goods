@@ -947,7 +947,11 @@ const bitQuestions: QuestionType = [
                         text: "先端平らで際まで攻める",
                         next: [],
                         answer: [
-                          { text: "FUJIビット", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "FUJIビット",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "コンビネーションテーパー",
                             img: "sample.png",
@@ -991,7 +995,11 @@ const bitQuestions: QuestionType = [
                             img: "sample.png",
                             url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "ミニポイント", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "ミニポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "グリーンポイント",
                             img: "sample.png",
@@ -1038,7 +1046,11 @@ const bitQuestions: QuestionType = [
                             img: "sample.png",
                             url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                           },
-                          { text: "オニクリーン", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "オニクリーン",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "ライスポイント",
                             img: "sample.png",
@@ -1055,7 +1067,11 @@ const bitQuestions: QuestionType = [
                         text: "ルースキューティクルの除去",
                         next: [],
                         answer: [
-                          { text: "ボーラー", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "ボーラー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                           {
                             text: "キューティクルニッパー",
                             img: "sample.png",
@@ -1136,9 +1152,21 @@ const bitQuestions: QuestionType = [
                         text: "狭い範囲",
                         next: [],
                         answer: [
-                          { text: "ソフティ", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
-                          { text: "ボーラー C", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
-                          { text: "ミニポイント", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                          {
+                            text: "ソフティ",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ボーラー C",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ミニポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                     ],
@@ -1148,7 +1176,11 @@ const bitQuestions: QuestionType = [
                   text: "サンディング",
                   next: [],
                   answer: [
-                    { text: "サンディングバンド", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                    {
+                      text: "サンディングバンド",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
                     {
                       text: "ブロンズダイヤモンドスリムパレル",
                       img: "sample.png",
@@ -1159,8 +1191,16 @@ const bitQuestions: QuestionType = [
                       img: "sample.png",
                       url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
                     },
-                    { text: "ラージバレル", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
-                    { text: "スモールバレル", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+                    {
+                      text: "ラージバレル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "スモールバレル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
                   ],
                 },
               ],
@@ -1170,9 +1210,21 @@ const bitQuestions: QuestionType = [
             text: "ストーンオフ",
             next: [],
             answer: [
-              { text: "ストーンリムーバー", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
-              { text: "ストーンオフ", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
-              { text: "ベビーコーン", img: "sample.png", url: "https://wspt-japan.shop-pro.jp/?pid=177731756" },
+              {
+                text: "ストーンリムーバー",
+                img: "sample.png",
+                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+              },
+              {
+                text: "ストーンオフ",
+                img: "sample.png",
+                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+              },
+              {
+                text: "ベビーコーン",
+                img: "sample.png",
+                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+              },
             ],
           },
         ],
@@ -1205,19 +1257,47 @@ const bitQuestions: QuestionType = [
                               text: "粗削り",
                               next: [],
                               answer: [
-                                { text: "円盤ビット", img: "" },
-                                { text: "ビッグバレル", img: "" },
-                                { text: "サンディングキャップ", img: "" },
-                                { text: "ダイヤ円盤ビット", img: "" },
-                                { text: "メガコーン", img: "" },
-                                { text: "バルーン", img: "" },
+                                {
+                                  text: "円盤ビット",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "ビッグバレル",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "サンディングキャップ",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "ダイヤ円盤ビット",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "メガコーン",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "バルーン",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
                               ],
                             },
                             {
                               text: "仕上げ",
                               next: [],
                               answer: [
-                                { text: "シリコンポイント", img: "" },
+                                {
+                                  text: "シリコンポイント",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
                                 { text: "つるピカセット", img: "" },
                               ],
                             },
@@ -1233,8 +1313,16 @@ const bitQuestions: QuestionType = [
                               text: "粗削り",
                               next: [],
                               answer: [
-                                { text: "円盤ビット", img: "" },
-                                { text: "バルーン", img: "" },
+                                {
+                                  text: "円盤ビット",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
+                                {
+                                  text: "バルーン",
+                                  img: "sample.png",
+                                  url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                                },
                               ],
                             },
                             {
@@ -1257,17 +1345,43 @@ const bitQuestions: QuestionType = [
                         text: "キューティクル",
                         next: [],
                         answer: [
-                          { text: "オニクリーン", img: "" },
-                          { text: "リムーバルスティック", img: "" },
-                          { text: "ベビースキンクリーナー", img: "" },
-                          { text: "再度クリーン", img: "" },
-                          { text: "ミニポイント", img: "" },
+                          {
+                            text: "オニクリーン",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "リムーバルスティック",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ベビースキンクリーナー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "再度クリーン",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ミニポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "プッシュアップ",
                         next: [],
-                        answer: [{ text: "ミニポイント", img: "" }],
+                        answer: [
+                          {
+                            text: "ミニポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                        ],
                       },
                     ],
                   ],
@@ -1281,16 +1395,38 @@ const bitQuestions: QuestionType = [
                         text: "粗削り",
                         next: [],
                         answer: [
-                          { text: "ダイヤモンドメガ", img: "" },
-                          { text: "円盤ビット", img: "" },
-                          { text: "ビッグバレル", img: "" },
-                          { text: "ボーラー", img: "" },
+                          {
+                            text: "ダイヤモンドメガ",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "円盤ビット",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ビッグバレル",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ボーラー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "仕上げ",
                         next: [],
-                        answer: [{ text: "シリコンポイント", img: "" }],
+                        answer: [
+                          {
+                            text: "シリコンポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                        ],
                       },
                     ],
                   ],
@@ -1312,19 +1448,47 @@ const bitQuestions: QuestionType = [
                         text: "粗削り",
                         next: [],
                         answer: [
-                          { text: "ウオノメビット", img: "" },
-                          { text: "ボーラーフレイザー", img: "" },
-                          { text: "ウオノメセット", img: "" },
-                          { text: "ボーラーフレイザー", img: "" },
-                          { text: "ボーラーフレイザー３本セット", img: "" },
+                          {
+                            text: "ウオノメビット",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ボーラーフレイザー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ウオノメセット",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ボーラーフレイザー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "ボーラーフレイザー３本セット",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                       {
                         text: "仕上げ",
                         next: [],
                         answer: [
-                          { text: "ダイヤモンドポーラー", img: "" },
-                          { text: "シリコンポイント", img: "" },
+                          {
+                            text: "ダイヤモンドポーラー",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
+                          {
+                            text: "シリコンポイント",
+                            img: "sample.png",
+                            url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                          },
                         ],
                       },
                     ],
@@ -1334,21 +1498,57 @@ const bitQuestions: QuestionType = [
                   text: "巻き爪",
                   next: [],
                   answer: [
-                    { text: "スリムポイント", img: "" },
-                    { text: "プレパレーター", img: "" },
-                    { text: "ニードル", img: "" },
-                    { text: "トップグリップ", img: "" },
-                    { text: "ソフティ", img: "" },
+                    {
+                      text: "スリムポイント",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "プレパレーター",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "ニードル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "トップグリップ",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "ソフティ",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
                   ],
                 },
                 {
                   text: "肥厚爪",
                   next: [],
                   answer: [
-                    { text: "セラマルチフィル", img: "" },
-                    { text: "マルチスピンドル", img: "" },
-                    { text: "スモールテーパー", img: "" },
-                    { text: "スリムオーバル", img: "" },
+                    {
+                      text: "セラマルチフィル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "マルチスピンドル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "スモールテーパー",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
+                    {
+                      text: "スリムオーバル",
+                      img: "sample.png",
+                      url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+                    },
                   ],
                 },
               ],

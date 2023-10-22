@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled, { CSSObject } from "styled-components";
-import colors from "../../asset/theme";
+import colors,{fonts} from "../../asset/theme";
 
 interface ReplayButtonProps {
   text: string;
@@ -32,7 +32,7 @@ export default ReplayButton;
 
 const Container = styled.p`
   color: ${colors.black};
-  font-size: 16px;
+  font-size: ${fonts.m};
   cursor: pointer;
   display: flex;
   gap: 4px;

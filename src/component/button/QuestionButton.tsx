@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled from "styled-components";
-import colors from "../../asset/theme";
+import colors, { fonts, media } from "../../asset/theme";
 
 interface QuestionButtonProps {
   text: string;
@@ -32,11 +32,12 @@ export default QuestionButton;
 const Container = styled.button`
   color: ${colors.black};
   background-color: ${colors.white};
-  font-size: 20px;
+  font-size: ${fonts.l};
   text-decoration: none;
   border-radius: 8px;
   display: flex;
   width: 400px;
+  max-width: 100%;
   padding: 14px 10px;
   justify-content: center;
   align-items: center;
@@ -48,6 +49,9 @@ const Container = styled.button`
     svg {
       transform: translateX(6px);
     }
+  }
+  @media (max-width: ${media.sp}) {
+    font-size: ${fonts.m};
   }
 `;
 

@@ -2,7 +2,7 @@ import { memo } from "react";
 import styled from "styled-components";
 import { QuestionType, QuestionAnswer } from "../asset/type";
 import QuestionButton from "./button/QuestionButton";
-import Wave from "react-wavify";
+import { fonts, media } from "../asset/theme";
 
 interface QAProps {
   onClick: (choice: QuestionAnswer, title: string) => void;
@@ -29,21 +29,6 @@ const QA = memo((props: QAProps) => {
           );
         })}
       </ButtonWrapper>
-      <WaveWrapper fill="url(#gradient)">
-        <defs>
-          <linearGradient
-            id="gradient"
-            x1="0"
-            y1="0"
-            x2="119.718"
-            y2="38.196"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#F9D6FF" />
-            <stop offset="1" stopColor="#CDE7FF" />
-          </linearGradient>
-        </defs>
-      </WaveWrapper>
     </Container>
   );
 });
@@ -55,7 +40,7 @@ const Container = styled.div`
   flex-direction: column;
   gap: 36px;
   height: 80%;
-  width: 100%;
+  width: 90%;
   position: relative;
 `;
 
@@ -69,13 +54,16 @@ const TitleWrapper = styled.div`
 
 const Title = styled.h1`
   font-weight: bold;
-  font-size: 40px;
+  font-size: ${fonts.xxl};
   font-family: "Dancing Script", cursive;
 `;
 
 const Content = styled.h2`
   font-weight: 500;
-  font-size: 32px;
+  font-size: ${fonts.xl};
+  @media (max-width: ${media.sp}) {
+    font-size: ${fonts.l};
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -84,12 +72,4 @@ const ButtonWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
   align-items: center;
-`;
-
-const WaveWrapper = styled(Wave)`
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  z-index: -1;
-  height: 100%;
 `;

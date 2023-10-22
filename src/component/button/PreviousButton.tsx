@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled, { CSSObject } from "styled-components";
-import colors from "../../asset/theme";
+import colors, { fonts } from "../../asset/theme";
 
 interface PreviousButtonProps {
   text: string;
@@ -34,7 +34,7 @@ export default PreviousButton;
 
 const Container = styled.p`
   color: ${colors.black};
-  font-size: 16px;
+  font-size: ${fonts.m};
   cursor: pointer;
   position: relative;
   &:hover {

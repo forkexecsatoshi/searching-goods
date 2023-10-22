@@ -5,6 +5,7 @@ import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
 import ItemCard from "../ItemCard";
 import { Result } from "../../asset/type";
+import { fonts, media } from "../../asset/theme";
 
 interface FinishProps {
   answeredQuestion: string[];
@@ -55,7 +56,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 32px;
+  font-size: ${fonts.xl};
+  @media (max-width: ${media.sp}) {
+    font-size: ${fonts.l};
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -64,4 +68,5 @@ const ButtonWrapper = styled.div`
   justify-content: center;
   gap: 18px;
   flex-direction: column;
+  width: 100%;
 `;

@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled from "styled-components";
-import colors from "../asset/theme";
+import colors, { fonts, media } from "../asset/theme";
 import Col from "react-bootstrap/Col";
 
 interface ItemCardProps {
@@ -11,7 +11,7 @@ interface ItemCardProps {
 
 const ItemCard = memo((props: ItemCardProps) => {
   return (
-    <Col xs={12} sm={6} md={4}>
+    <Col xs={12} md={6} lg={4}>
       <Container target="_blank" href={props.url}>
         <Img
           style={{
@@ -59,8 +59,11 @@ const Img = styled.div`
 
 const Title = styled.p`
   font-weight: bold;
-  font-size: 20px;
+  font-size: ${fonts.l};
   margin-bottom: 0;
   height: 60px;
   text-align: center;
+  @media (max-width: ${media.sp}) {
+    font-size: ${fonts.m};
+  }
 `;

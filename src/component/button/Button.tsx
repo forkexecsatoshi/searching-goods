@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled from "styled-components";
-import colors from "../../asset/theme";
+import colors, { fonts } from "../../asset/theme";
 
 interface ButtonProps {
   text: string;
@@ -16,7 +16,7 @@ export default Button;
 const Container = styled.button`
   color: ${colors.white};
   background: ${colors.primary};
-  font-size: 20px;
+  font-size: ${fonts.l};
   text-decoration: none;
   text-align: center;
   border-radius: 8px;

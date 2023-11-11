@@ -4,71 +4,65 @@ const machineQuestions: QuestionType = [
   { title: "マシンを選ぶ", answer: "machine" },
   [
     {
-      text: "サロンプロ仕様",
+      text: "サロン仕様",
       next: [],
       answer: [
         {
-          text: "ROBO",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+          text: "プロ向けROBO",
+          img: "machineQuestions/ROBO.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=159455152",
+        },
+        {
+          text: "ワンボタンで簡単操作！One",
+          img: "machineQuestions/One.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=174293660",
+        },
+        {
+          text: "スタンダードなPOCO",
+          img: "machineQuestions/POCO.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=155307007",
         },
       ],
     },
     {
-      text: "サロン１～２年目",
+      text: "初心者～中級者用",
       next: [],
       answer: [
         {
-          text: "ROBO",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-        },
-        {
-          text: "One",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-        },
-        {
-          text: "POCO",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-        },
-      ],
-    },
-    {
-      text: "セルフメイン",
-      next: [],
-      answer: [
-        {
-          text: "One",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+          text: "ワンボタンで簡単操作！One",
+          img: "machineQuestions/One.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=174293660",
         },
         {
           text: "SQUARE",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+          img: "machineQuestions/SQUARE.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=168020597",
         },
         {
           text: "ジャックス",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-        },
+          img: "machineQuestions/Jacks.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=154904474"
+        },  
         {
           text: "ピース",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+          img: "machineQuestions/Peace.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=176973130",
         },
       ],
     },
     {
-      text: "フット用高トルク",
+      text: "フット用マシン",
       next: [],
       answer: [
         {
-          text: "Riki",
-          img: "sample.png",
-          url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
+          text: "ハイトルクマシン Riki",
+          img: "machineQuestions/Riki.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=168002112",
+        },
+        {
+          text: "コードレスマシン ピース",
+          img: "machineQuestions/Peace.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=176973130",
         },
       ],
     },

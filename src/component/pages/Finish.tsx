@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import ReplayButton from "../button/ReplayButton";
 import QuestionButton from "../button/QuestionButton";
+import PreviousButton from "../button/PreviousButton";
 import ItemCard from "../ItemCard";
 import { Result } from "../../asset/type";
 import { fonts, media } from "../../asset/theme";
@@ -11,6 +12,7 @@ interface FinishProps {
   answeredQuestion: string[];
   onClickTop: () => void;
   onClickRetry: () => void;
+  onClickPrevious: () => void; // 一旦追加
   result: Result;
 }
 
@@ -35,6 +37,11 @@ const Finish = memo((props: FinishProps) => {
         <QuestionButton
           text="もう一度診断をする"
           onClick={props.onClickRetry}
+        />
+        <PreviousButton
+          text="前の質問に戻る"
+          onClick={props.onClickPrevious}
+          // css={previousButtonStyle}
         />
       </ButtonWrapper>
     </Container>

@@ -13,8 +13,7 @@ const App = () => {
   // 回答済みの選択肢を格納する
   const [answeredQuestion, setAnsweredQuestion] = useState<string[]>([]);
   // 前回回答したタイトル
-  const [previousQuestionTitle, setPreviousQuestionTitle] =
-    useState<string>("");
+  const [previousQuestionTitle, setPreviousQuestionTitle] =useState<string>("");
   // 直近で回答したタイトル
   const [currentQuestionTitle, setCurrentQuestionTitle] = useState<string>("");
   // アンケート終了かどうか
@@ -95,6 +94,7 @@ const App = () => {
         answeredQuestion={answeredQuestion}
         onClickTop={() => onClickRetry("top")}
         onClickRetry={() => onClickRetry("question")}
+        onClickPrevious={onClickPrevious}
         result={result}
       />
     ),

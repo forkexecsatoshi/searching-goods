@@ -5,91 +5,64 @@ const diamondFileQuestions: QuestionType = [
   [
     {
       text: "ハンド用ファイル",
-      next: [
-        { title: "ハンド用ファイル", answer: "ハンド用ファイル" },
-        [
-          {
-            text: "両面ファイル",
-            next: [
-              {
-                text: "薄さ重視",
-                next: [],
-                answer: [
-                  {
-                    text: "ハイグレードダイヤモンドファイル",
-                    img: "sample.png",
-                    url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-                  },
-                  {
-                    text: "ダイヤモンドファイル スタンダード 180G 両面",
-                    img: "sample.png",
-                    url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-                  },
-                ],
-              },
-              {
-                text: "がっつり削りたい",
-                next: [],
-                answer: [
-                  {
-                    text: "セラダイヤモンドファイル  両面 #200/#240",
-                    img: "sample.png",
-                    url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            text: "片面ファイル",
-            next: [],
-          },
-        ],
+      next: [],
+      answer: [
+        {
+          text: "極薄 ハイグレードダイヤモンドファイル 両面",
+          img: "diamondFileQuestions/hdiamondfile.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=166981982",
+        },
+        {
+          text: "極薄 ダイヤモンドファイル スタンダード 両面180G",
+          img: "diamondFileQuestions/diamondfile180g.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=170730069",
+        },
+        {
+          text: "耐久性◎ セラダイヤモンドファイル 両面 #200/#240",
+          img: "diamondFileQuestions/CeraDiamondFile.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=159691557",
+        },
+        {
+          text: "耐久性◎ セラダイヤモンドファイル 片面#180",
+          img : "diamondFileQuestions/ceraDiamondfile180.jpg",
+          url: "https://wspt-japan.shop-pro.jp/?pid=174152572"
+        }
       ],
     },
     {
       text: "フット用ファイル",
-      next: [
-        { title: "フット用ファイル", answer: "フット用ファイル" },
-        [
-          {
-            text: "両面ファイル",
-            next: [],
-            answer: [
-              {
-                text: "ステンレス製両面ダイヤモンドファイル 【スタンダード】",
-                img: "sample.png",
-                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-              },
-              {
-                text: "ステンレス製両面ダイヤモンドファイル 【ミニ】",
-                img: "sample.png",
-                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-              },
-            ],
-          },
-          {
-            text: "片面ファイル",
-            next: [],
-            answer: [
-              {
-                text: "【日本トラブルネイルケア協会 みなもン先生監修】 ステンレス製 フット用 ショートファイル#100",
-                img: "sample.png",
-                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-              },
-              {
-                text: "【日本トラブルネイルケア協会 みなもン先生監修】 ステンレス製 フット用 ショートファイル#240",
-                img: "sample.png",
-                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-              },
-              {
-                text: "セラダイヤモンドファイル フット用 200#",
-                img: "sample.png",
-                url: "https://wspt-japan.shop-pro.jp/?pid=177731756",
-              },
-            ],
-          },
-        ],
+      next: [],
+      answer: [
+        {
+          text: "両面ダイヤモンドファイル【スタンダード】",
+          img: "diamondFileQuestions/sutenlesDiamondFiles.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=153778360",
+        },
+        {
+          text: "両面ダイヤモンドファイル 【ミニ】",
+          img: "diamondFileQuestions/sutenlesDiamondFilemini.png",
+          url: "https://wspt-japan.shop-pro.jp/?pid=153808468",
+        },
+        {
+          text: "フット用 両面ダイヤモンドファイル ＃120/＃240",
+          img: "diamondFileQuestions/sutenlesDiamondFilemini.png",　//画像変更
+          url: "https://wspt-japan.shop-pro.jp/?pid=177944907",
+        },
+        {
+          text: "【日本トラブルネイルケア協会 みなもン先生監修】片面ショートファイル#100",
+          img: "diamondFileQuestions/shortfile100.png",//画像変更
+          url: "https://wspt-japan.shop-pro.jp/?pid=156474629",
+        },
+        {
+          text: "【日本トラブルネイルケア協会 みなもン先生監修】片面ショートファイル#240",
+          img: "diamondFileQuestions/shortfile100.png",//画像変更
+          url: "https://wspt-japan.shop-pro.jp/?pid=156474629",
+        },
+        {
+          text: "耐久性◎ セラダイヤモンドファイル フット用 200#",
+          img: "diamondFileQuestions/ceraDiamondfile200.png",//画像変更
+          url: "https://wspt-japan.shop-pro.jp/?pid=158940340",
+        },
       ],
     },
   ],

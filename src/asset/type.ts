@@ -6,6 +6,7 @@ export type Result = { text: string; img: string, url: string }[];
 
 export type QuestionAnswer = {
   text: string;
+  iconUrl?: string;
   next:
     | []
     | [

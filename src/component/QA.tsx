@@ -22,6 +22,7 @@ const QA = memo((props: QAProps) => {
             <QuestionButton
               key={`item_${index}`}
               text={choice.text}
+              iconUrl={choice.iconUrl}
               onClick={() =>
                 props.onClick(choice, props.currentQuestion[0]["answer"])
               }

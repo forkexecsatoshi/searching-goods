@@ -11,7 +11,7 @@ interface ItemCardProps {
 
 const ItemCard = memo((props: ItemCardProps) => {
   return (
-    <Col xs={12} md={6} lg={4}>
+    <ColWrapper xs={12} md={6} lg={4}>
       <Container target="_blank" href={props.url}>
         <Img
           style={{
@@ -20,20 +20,24 @@ const ItemCard = memo((props: ItemCardProps) => {
         />
         <Title>{props.title}</Title>
       </Container>
-    </Col>
+    </ColWrapper>
   );
 });
 
 export default ItemCard;
+
+const ColWrapper = styled(Col)`
+  margin-bottom: 12px;
+`;
 
 const Container = styled.a`
   background-color: ${colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
   gap: 8px;
-  padding-bottom: 20px;
   border-radius: 12px;
   border: solid 2px ${colors.blue};
   position: relative;
@@ -44,6 +48,7 @@ const Container = styled.a`
   color: ${colors.black};
   text-decoration: none;
   transition: 0.2s;
+  height: 100%;
   &:hover {
     transform: scale(1.05);
   }
@@ -55,14 +60,15 @@ const Img = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #d5e4ff;
 `;
 
 const Title = styled.p`
   font-weight: bold;
-  font-size: ${fonts.l};
+  font-size: 20px;
   margin-bottom: 0;
-  height: 60px;
-  text-align: center;
+  min-height: 60px;
+  padding: 0 4px;
   @media (max-width: ${media.sp}) {
     font-size: ${fonts.m};
   }

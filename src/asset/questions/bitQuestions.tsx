@@ -5,6 +5,7 @@ const bitQuestions: QuestionType = [
   [
     {
       text: "ハンド施術",
+      iconUrl: "bitQuestion/triplefill.png",
       next: [
         { title: "ハンド施術", answer: "ハンド施術" },
         [

@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import styled from "styled-components";
 import Row from "react-bootstrap/Row";
 import ReplayButton from "../button/ReplayButton";
@@ -6,21 +6,25 @@ import QuestionButton from "../button/QuestionButton";
 import PreviousButton from "../button/PreviousButton";
 import ItemCard from "../ItemCard";
 import { Result } from "../../asset/type";
-import { fonts, media } from "../../asset/theme";
+import colors, { fonts, media } from "../../asset/theme";
+import Spinner from 'react-bootstrap/Spinner';
 
 interface FinishProps {
   answeredQuestion: string[];
   onClickTop: () => void;
   onClickRetry: () => void;
-  onClickPrevious: () => void; // 一旦追加
+  onClickPrevious: () => void;
   result: Result;
 }
 
 const Finish = memo((props: FinishProps) => {
+  const [isResultOpen, setIsResultOpen] = useState<boolean>(false);
+  setTimeout(() => setIsResultOpen(true), 2000);
   return (
     <Container>
       <Title>あなたにおすすめのアイテムは...</Title>
-      <Row>
+      {/* {isResultOpen ? */}
+        <Row>
         {props.result.map((item, index) => {
           return (
             <ItemCard
@@ -32,6 +36,8 @@ const Finish = memo((props: FinishProps) => {
           );
         })}
       </Row>
+         {/* : <SpinnerWrapper animation="border" />
+      } */}
       <ButtonWrapper>
         <ReplayButton text="TOPに戻る" onClick={props.onClickTop} />
         <QuestionButton
@@ -41,7 +47,7 @@ const Finish = memo((props: FinishProps) => {
         <PreviousButton
           text="前の質問に戻る"
           onClick={props.onClickPrevious}
-          // css={previousButtonStyle}
+          css={{marginRight: "auto"}}
         />
       </ButtonWrapper>
     </Container>
@@ -59,6 +65,14 @@ const Container = styled.div`
   height: 100%;
   .row {
     width: 100%;
+    div:nth-child(2n) a {
+      justify-content: center;
+      padding: 10px 0;
+    }
+    div:nth-child(2n+1) a {
+      justify-content: flex-start;
+      padding-bottom: 10px;
+    }
   }
 `;
 
@@ -67,6 +81,12 @@ const Title = styled.h2`
   @media (max-width: ${media.sp}) {
     font-size: ${fonts.l};
   }
+`;
+
+const SpinnerWrapper = styled(Spinner)`
+  height: 100px;
+  width: 100px;
+  color: ${colors.blue}!important;
 `;
 
 const ButtonWrapper = styled.div`

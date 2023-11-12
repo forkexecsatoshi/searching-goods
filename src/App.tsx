@@ -59,6 +59,15 @@ const App = () => {
       onClickRetry("question");
       return;
     }
+    // 結果画面から戻る用
+    if (currentStage !== "question") {
+      setCurrentStage("question");
+      setAnsweredQuestion((prev) => {
+      prev.pop()!;
+      return prev;
+    });
+      return;
+    }
     let question = questions[0] as QuestionType;
     // 回答を1つ前の選択肢まで1つ1つ深ぼっていく
     for (let i = 0; i < answeredQuestion.length - 1; i++) {

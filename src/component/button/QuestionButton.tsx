@@ -63,7 +63,7 @@ const Container = styled.button`
     font-size: ${fonts.m};
   }
 `;
-
+//アイコンサイズ変更
 const IconImg = styled.div`
   width: 24px;
   height: 24px;

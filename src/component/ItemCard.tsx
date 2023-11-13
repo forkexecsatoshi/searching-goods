@@ -60,7 +60,7 @@ const Img = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #d5e4ff;
+  //background-color: #d5e4ff;
 `;
 
 const Title = styled.p`

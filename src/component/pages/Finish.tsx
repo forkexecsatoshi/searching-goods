@@ -19,11 +19,11 @@ interface FinishProps {
 
 const Finish = memo((props: FinishProps) => {
   const [isResultOpen, setIsResultOpen] = useState<boolean>(false);
-  setTimeout(() => setIsResultOpen(true), 2000);
+  setTimeout(() => setIsResultOpen(true), 500);
   return (
     <Container>
       <Title>あなたにおすすめのアイテムは...</Title>
-      {/* {isResultOpen ? */}
+      {isResultOpen ?
         <Row>
         {props.result.map((item, index) => {
           return (
@@ -36,8 +36,8 @@ const Finish = memo((props: FinishProps) => {
           );
         })}
       </Row>
-         {/* : <SpinnerWrapper animation="border" />
-      } */}
+         : <SpinnerWrapper animation="border" />
+      }
       <ButtonWrapper>
         <ReplayButton text="TOPに戻る" onClick={props.onClickTop} />
         <QuestionButton
@@ -70,9 +70,13 @@ const Container = styled.div`
       padding: 10px 0;
     }
     div:nth-child(2n+1) a {
-      justify-content: flex-start;
-      padding-bottom: 10px;
+      justify-content: center;
+      padding: 10px 0;
     }
+    // div:nth-child(2n+1) a {
+    //   justify-content: flex-start;
+    //   padding-bottom: 10px;
+    // }
   }
 `;
 

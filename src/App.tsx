@@ -13,7 +13,8 @@ const App = () => {
   // 回答済みの選択肢を格納する
   const [answeredQuestion, setAnsweredQuestion] = useState<string[]>([]);
   // 前回回答したタイトル
-  const [previousQuestionTitle, setPreviousQuestionTitle] =useState<string>("");
+  const [previousQuestionTitle, setPreviousQuestionTitle] =
+    useState<string>("");
   // 直近で回答したタイトル
   const [currentQuestionTitle, setCurrentQuestionTitle] = useState<string>("");
   // アンケート終了かどうか
@@ -63,9 +64,9 @@ const App = () => {
     if (currentStage !== "question") {
       setCurrentStage("question");
       setAnsweredQuestion((prev) => {
-      prev.pop()!;
-      return prev;
-    });
+        prev.pop()!;
+        return prev;
+      });
       return;
     }
     let question = questions[0] as QuestionType;
@@ -76,15 +77,15 @@ const App = () => {
           question = choice.next as QuestionType;
       });
     }
+    setAnsweredQuestion((prev) => {
+      prev.pop()!;
+      return prev;
+    });
     // 1つ前の問題をセット
     setCurrentQuestion(question);
     // 現在と前回の問題文のタイトルを更新する
     setCurrentQuestionTitle(answeredQuestion[answeredQuestion.length - 2]);
     setPreviousQuestionTitle(answeredQuestion[answeredQuestion.length - 3]);
-    setAnsweredQuestion((prev) => {
-      prev.pop()!;
-      return prev;
-    });
   };
 
   const stageDom = {
